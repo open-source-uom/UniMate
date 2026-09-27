@@ -274,7 +274,7 @@ export default function Home() {
                             <div className="flex items-center gap-4">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
-                                    src="/unimate.png"
+                                    src="/unimate2.png"
                                     alt="UniMate Logo"
                                     className="w-16 h-16 sm:w-[72px] sm:h-[72px] object-contain shrink-0"
                                 />
@@ -317,6 +317,7 @@ export default function Home() {
             <main className="main-with-sidebar px-4 sm:px-6 pb-40 relative" style={{ zIndex: 1 }}>
                 <div className="max-w-7xl mx-auto lg:pt-8">
                     <div className="grid grid-cols-2 gap-x-4 lg:hidden items-start">
+
                         {(() => {
                             const mobileColumns: Array<typeof allCategoriesWithApps> = [[], []];
                             const heights = [0, 0];
