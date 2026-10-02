@@ -198,9 +198,90 @@
     }
   },
   {
+    "id": "konqueror",
+    "name": "Konqueror",
+    "description": "An open source browser with integrated file manager by the KDE project",
+    "category": "Web Browsers",
+    "targets": {
+      "ubuntu": "konqueror",
+      "debian": "konqueror",
+      "arch": "konqueror",
+      "fedora": "konqueror",
+      "opensuse": "konqueror",
+      "nix": "kdePackages.konqueror",
+      "snap": "konqueror"
+    },
+    "unavailableReason": "Please use your distribution's native package manager to install this application, or visit [kde.org](https://apps.kde.org/lt/konqueror/) for official installation instructions.",
+    "icon": {
+      "type": "url",
+      "url": "https://apps.kde.org/app-icons/org.kde.konqueror.svg"
+    }
+  },
+  {
+    "id": "falkon",
+    "name": "Falkon",
+    "description": "A lightweight browser by the KDE project",
+    "category": "Web Browsers",
+    "targets": {
+      "ubuntu": "falkon",
+      "debian": "falkon",
+      "arch": "falkon",
+      "fedora": "falkon",
+      "opensuse": "falkon",
+      "nix": "kdePackages.falkon",
+      "flatpak": "org.kde.falkon",
+      "snap": "falkon"
+    },
+    "unavailableReason": "Please use your distribution's native package manager to install this application, or use the [Flatpak](https://flathub.org/en/apps/org.kde.falkon).",
+    "icon": {
+      "type": "url",
+      "url": "https://apps.kde.org/app-icons/org.kde.falkon.svg"
+    }
+  },
+  {
+    "id": "epiphany",
+    "name": "GNOME Web",
+    "description": "A lightweight browser by the GNOME project",
+    "category": "Web Browsers",
+    "targets": {
+      "ubuntu": "epiphany-browser",
+      "debian": "epiphany-browser",
+      "arch": "epiphany",
+      "fedora": "epiphany",
+      "opensuse": "epiphany",
+      "nix": "epiphany",
+      "flatpak": "org.gnome.Epiphany",
+      "snap": "epiphany"
+    },
+    "unavailableReason": "Please use your distribution's native package manager to install this application, or use [Flatpak](https://flathub.org/en/apps/org.gnome.Epiphany).",
+    "icon": {
+      "type": "url",
+      "url": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Epiphany.svg"
+    }
+  },
+  {
+    "id": "qutebrowser",
+    "name": "qutebrowser",
+    "description": "A lightweight keyboard-focused browser.",
+    "category": "Web Browsers",
+    "targets": {
+      "ubuntu": "qutebrowser",
+      "debian": "qutebrowser",
+      "arch": "qutebrowser",
+      "fedora": "qutebrowser",
+      "opensuse": "qutebrowser",
+      "nix": "qutebrowser"
+    },
+    "unavailableReason": "Not in the official repos. See [qutebrowser.org](https://qutebrowser.org/doc/install.html) for installation instructions",
+    "icon": {
+      "type": "url",
+      "url": "https://qutebrowser.org/icons/qutebrowser.svg"
+    }
+  },
+  {
     "id": "nyxt",
     "name": "Nyxt",
-    "description": "Ένας περιηγητής που βασίζεται στο πληκτρολόγιο, για προχωρημένους χρήστες.",
+    "description": "A keyboard-centric browser for power users.",
     "category": "Web Browsers",
     "targets": {
       "arch": "nyxt",

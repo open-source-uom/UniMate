@@ -110,6 +110,13 @@ export function ShortcutsBar({
                         <span><b className="text-[var(--text-secondary)]">Tab</b> προεπισκόπηση</span>
                         <span className="opacity-30">·</span>
                         <span><b className="text-[var(--text-secondary)]">?</b> βοήθεια</span>
+
+                        <div
+                        className="text-white px-3 py-1 flex items-center font-bold text-xs tracking-wider"
+                        style={{ backgroundColor: distroColor }}
+                    >
+                        TUX
+                        </div>
                     </div>
                 </div>
             </div>

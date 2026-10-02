@@ -1,8 +1,26 @@
 [
   {
+    "id": "cursor",
+    "name": "Cursor",
+    "description": "AI-powered code editor based on VS Code",
+    "category": "Dev: Editors",
+    "targets": {
+      "arch": "cursor-bin",
+      "nix": "code-cursor",
+      "homebrew": "--cask cursor"
+    },
+    "unavailableReason": "Only available via [AUR](https://aur.archlinux.org/packages/cursor-bin) or Nix. Download from [cursor.com/download](https://cursor.com/download).",
+    "icon": {
+      "type": "iconify",
+      "set": "simple-icons",
+      "name": "cursor",
+      "color": "#232020ff"
+    }
+  },
+  {
     "id": "vscode",
     "name": "VS Code",
-    "description": "Ο πιο δημοφιλής επεκτάσιμος επεξεργαστής κώδικα της Microsoft",
+    "description": "Most popular extensible code editor by Microsoft",
     "category": "Dev: Editors",
     "targets": {
       "arch": "code",
@@ -39,100 +57,9 @@
     }
   },
   {
-    "id": "vim",
-    "name": "Vim",
-    "description": "Ο κλασικός επεξεργαστής κώδικα με λειτουργικά παράθυρα που τα ξεκίνησε όλα",
-    "category": "Dev: Editors",
-    "targets": {
-      "ubuntu": "vim",
-      "debian": "vim",
-      "arch": "vim",
-      "fedora": "vim-enhanced",
-      "opensuse": "vim",
-      "nix": "vim",
-      "flatpak": "org.vim.Vim",
-      "snap": "vim-editor",
-      "homebrew": "vim"
-    },
-    "icon": {
-      "type": "iconify",
-      "set": "simple-icons",
-      "name": "vim",
-      "color": "#019733"
-    }
-  },
-  {
-    "id": "neovim",
-    "name": "Neovim",
-    "description": "Εκσυγχρονισμένο Vim με καλύτερη δυνατότητα επέκτασης",
-    "category": "Dev: Editors",
-    "targets": {
-      "ubuntu": "neovim",
-      "debian": "neovim",
-      "arch": "neovim",
-      "fedora": "neovim",
-      "opensuse": "neovim",
-      "nix": "neovim",
-      "flatpak": "com.neovim.Neovim",
-      "snap": "nvim --classic",
-      "homebrew": "neovim"
-    },
-    "icon": {
-      "type": "iconify",
-      "set": "simple-icons",
-      "name": "neovim",
-      "color": "#57A143"
-    }
-  },
-  {
-    "id": "helix",
-    "name": "Helix",
-    "description": "Επεξεργαστής παραθύρων με ενσωματωμένα LSP και tree-sitter",
-    "category": "Dev: Editors",
-    "targets": {
-      "arch": "helix",
-      "fedora": "helix",
-      "opensuse": "helix",
-      "nix": "helix",
-      "flatpak": "com.helix-editor.Helix",
-      "snap": "helix --classic",
-      "homebrew": "helix"
-    },
-    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια των Debian/Ubuntu. Για το Ubuntu, προσθέστε το PPA: `sudo add-apt-repository ppa:maveonair/helix-editor && sudo apt update && sudo apt install helix`. Για το Debian, κατεβάστε .deb από [GitHub releases](https://github.com/helix-editor/helix/releases).",
-    "icon": {
-      "type": "iconify",
-      "set": "mdi",
-      "name": "dna",
-      "color": "#4E2F7F"
-    }
-  },
-  {
-    "id": "micro",
-    "name": "Micro",
-    "description": "Εύχρηστο πρόγραμμα επεξεργασίας κώδικα για τερματικά, όπως το nano",
-    "category": "Dev: Editors",
-    "targets": {
-      "arch": "micro",
-      "ubuntu": "micro",
-      "debian": "micro",
-      "fedora": "micro",
-      "opensuse": "micro-editor",
-      "nix": "micro-editor",
-      "flatpak": "io.github.zyedidia.micro",
-      "snap": "micro --classic",
-      "homebrew": "micro"
-    },
-    "icon": {
-      "type": "iconify",
-      "set": "simple-icons",
-      "name": "microeditor",
-      "color": "#2E3192"
-    }
-  },
-  {
     "id": "zed",
     "name": "Zed",
-    "description": "Επεξεργαστής κώδικα υψηλής απόδοσης με δυνατότητα συνεργασίας σε πραγματικό χρόνο",
+    "description": "High-performance editor with real-time collaboration",
     "category": "Dev: Editors",
     "targets": {
       "arch": "zed",
@@ -149,23 +76,60 @@
     }
   },
   {
-    "id": "sublime",
-    "name": "Sublime Text",
-    "description": "Εξαιρετικά γρήγορος ιδιόκτητος επεξεργαστής κώδικα",
+    "id": "intellij-idea",
+    "name": "Intellij IDEA",
+    "description": "IDE for Java and Kotlin developers by Jetbrains",
     "category": "Dev: Editors",
     "targets": {
-      "arch": "sublime-text-4",
-      "nix": "sublime",
-      "flatpak": "com.sublimetext.three",
-      "snap": "sublime-text --classic",
-      "homebrew": "--cask sublime-text"
+      "arch": "intellij-idea-ultimate-edition",
+      "nix": "jetbrains.idea",
+      "flatpak": "com.jetbrains.IntelliJ-IDEA-Ultimate",
+      "homebrew": "--cask intellij-idea",
+      "snap": "intellij-idea --classic"
     },
-    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια. Χρησιμοποιήστε [Flatpak](https://flathub.org/en/apps/com.sublimetext.three)/[Snap](https://snapcraft.io/sublime-text) ή ακολουθήστε τις οδηγίες στη διεύθυνση [sublimetext.com/docs/linux_repositories](https://www.sublimetext.com/docs/linux_repositories.html).",
+    "unavailableReason": "Not in official repos, download from [JetBrains](https://www.jetbrains.com/idea/download/?section=linux) or use [Flatpak](https://flathub.org/en/apps/com.jetbrains.IntelliJ-IDEA-Ultimate) / [Snap](https://snapcraft.io/intellij-idea).",
     "icon": {
       "type": "iconify",
-      "set": "simple-icons",
-      "name": "sublimetext",
-      "color": "#FF9800"
+      "set": "logos",
+      "name": "intellij-idea"
+    }
+  },
+  {
+    "id": "pycharm",
+    "name": "Pycharm",
+    "description": "IDE for Python developers and Data scientists by Jetbrains",
+    "category": "Dev: Editors",
+    "targets": {
+      "arch": "pycharm",
+      "flatpak": "com.jetbrains.PyCharm-Professional",
+      "homebrew": "--cask pycharm",
+      "snap": "pycharm --classic",
+      "nix": "jetbrains.pycharm"
+    },
+    "unavailableReason": "Not in official repos, download from [JetBrains](https://www.jetbrains.com/pycharm/download/?section=linux) or use [Flatpak](https://flathub.org/en/apps/com.jetbrains.PyCharm-Professional) / [Snap](https://snapcraft.io/pycharm).",
+    "icon": {
+      "type": "iconify",
+      "set": "logos",
+      "name": "pycharm"
+    }
+  },
+  {
+    "id": "clion",
+    "name": "CLion",
+    "description": "IDE for C and C++ developers by Jetbrains",
+    "category": "Dev: Editors",
+    "targets": {
+      "arch": "clion",
+      "flatpak": "com.jetbrains.CLion",
+      "homebrew": "--cask clion",
+      "snap": "clion --classic",
+      "nix": "jetbrains.clion"
+    },
+    "unavailableReason": "Not in official repos, download from [JetBrains](https://www.jetbrains.com/clion/download/?section=linux) or use [Flatpak](https://flathub.org/en/apps/com.jetbrains.CLion) / [Snap](https://snapcraft.io/clion).",
+    "icon": {
+      "type": "iconify",
+      "set": "logos",
+      "name": "clion"
     }
   },
   {
@@ -192,21 +156,23 @@
     }
   },
   {
-    "id": "cursor",
-    "name": "Cursor",
-    "description": "Επεξεργαστής κώδικα με τεχνητή νοημοσύνη, βασισμένος στο VS Code",
+    "id": "sublime",
+    "name": "Sublime Text",
+    "description": "Lightning-fast proprietary text editor",
     "category": "Dev: Editors",
     "targets": {
-      "arch": "cursor-bin",
-      "nix": "code-cursor",
-      "homebrew": "--cask cursor"
+      "arch": "sublime-text-4",
+      "nix": "sublime",
+      "flatpak": "com.sublimetext.three",
+      "snap": "sublime-text --classic",
+      "homebrew": "--cask sublime-text"
     },
-    "unavailableReason": "Διατίθεται μόνο μέσω [AUR](https://aur.archlinux.org/packages/cursor-bin) ή Nix. Λήψη από [cursor.com/download](https://cursor.com/download).",
+    "unavailableReason": "Not in official repos. Use [Flatpak](https://flathub.org/en/apps/com.sublimetext.three)/[Snap](https://snapcraft.io/sublime-text) or follow instructions at [sublimetext.com/docs/linux_repositories](https://www.sublimetext.com/docs/linux_repositories.html).",
     "icon": {
       "type": "iconify",
       "set": "simple-icons",
-      "name": "cursor",
-      "color": "#232020ff"
+      "name": "sublimetext",
+      "color": "#FF9800"
     }
   },
   {
@@ -233,9 +199,121 @@
     }
   },
   {
+    "id": "geany",
+    "name": "Geany",
+    "description": "Fast and lightweight IDE",
+    "category": "Dev: Editors",
+    "targets": {
+      "ubuntu": "geany",
+      "debian": "geany",
+      "arch": "geany",
+      "fedora": "geany",
+      "opensuse": "geany",
+      "nix": "geany",
+      "flatpak": "org.geany.Geany",
+      "homebrew": "--cask geany"
+    },
+    "unavailableReason": "Snap is unmaintained, download from [Geany](https://www.geany.org/download/releases/) or use [Flatpak](https://flathub.org/en/apps/org.geany.Geany).",
+    "icon": {
+      "type": "url",
+      "url": "https://www.geany.org/static/img/geany.svg"
+    }
+  },
+  {
+    "id": "neovim",
+    "name": "Neovim",
+    "description": "Modernized Vim with better extensibility",
+    "category": "Dev: Editors",
+    "targets": {
+      "ubuntu": "neovim",
+      "debian": "neovim",
+      "arch": "neovim",
+      "fedora": "neovim",
+      "opensuse": "neovim",
+      "nix": "neovim",
+      "flatpak": "com.neovim.Neovim",
+      "snap": "nvim --classic",
+      "homebrew": "neovim"
+    },
+    "icon": {
+      "type": "iconify",
+      "set": "simple-icons",
+      "name": "neovim",
+      "color": "#57A143"
+    }
+  },
+  {
+    "id": "vim",
+    "name": "Vim",
+    "description": "The classic modal text editor that started it all",
+    "category": "Dev: Editors",
+    "targets": {
+      "ubuntu": "vim",
+      "debian": "vim",
+      "arch": "vim",
+      "fedora": "vim-enhanced",
+      "opensuse": "vim",
+      "nix": "vim",
+      "flatpak": "org.vim.Vim",
+      "snap": "vim-editor",
+      "homebrew": "vim"
+    },
+    "icon": {
+      "type": "iconify",
+      "set": "simple-icons",
+      "name": "vim",
+      "color": "#019733"
+    }
+  },
+  {
+    "id": "helix",
+    "name": "Helix",
+    "description": "Modal editor with LSP and tree-sitter built-in",
+    "category": "Dev: Editors",
+    "targets": {
+      "arch": "helix",
+      "fedora": "helix",
+      "opensuse": "helix",
+      "nix": "helix",
+      "flatpak": "com.helix-editor.Helix",
+      "snap": "helix --classic",
+      "homebrew": "helix"
+    },
+    "unavailableReason": "Not in official Debian/Ubuntu repos. For Ubuntu, add the PPA: `sudo add-apt-repository ppa:maveonair/helix-editor && sudo apt update && sudo apt install helix`. For Debian, download .deb from [GitHub releases](https://github.com/helix-editor/helix/releases).",
+    "icon": {
+      "type": "iconify",
+      "set": "mdi",
+      "name": "dna",
+      "color": "#4E2F7F"
+    }
+  },
+  {
+    "id": "micro",
+    "name": "Micro",
+    "description": "Easy-to-use terminal text editor like nano",
+    "category": "Dev: Editors",
+    "targets": {
+      "arch": "micro",
+      "ubuntu": "micro",
+      "debian": "micro",
+      "fedora": "micro",
+      "opensuse": "micro-editor",
+      "nix": "micro-editor",
+      "flatpak": "io.github.zyedidia.micro",
+      "snap": "micro --classic",
+      "homebrew": "micro"
+    },
+    "icon": {
+      "type": "iconify",
+      "set": "simple-icons",
+      "name": "microeditor",
+      "color": "#2E3192"
+    }
+  },
+  {
     "id": "emacs",
     "name": "Emacs",
-    "description": "Επεκτάσιμος, προσαρμόσιμος, ελεύθερος επεξεργαστής κώδικα",
+    "description": "Extensible, customizable, free/libre text editor",
     "category": "Dev: Editors",
     "targets": {
       "ubuntu": "emacs",
@@ -253,84 +331,6 @@
       "set": "simple-icons",
       "name": "gnuemacs",
       "color": "#7F5AB6"
-    }
-  },
-  {
-    "id": "geany",
-    "name": "Geany",
-    "description": "Γρήγορος και ελαφρύς επεξεργαστής κώδικα.",
-    "category": "Dev: Editors",
-    "targets": {
-      "ubuntu": "geany",
-      "debian": "geany",
-      "arch": "geany",
-      "fedora": "geany",
-      "opensuse": "geany",
-      "nix": "geany",
-      "flatpak": "org.geany.Geany",
-      "homebrew": "--cask geany"
-    },
-    "unavailableReason": "Το Snap δεν υποστηρίζεται πλέον, κατεβάστε το από [Geany](https://www.geany.org/download/releases/) ή χρησιμοποιήστε [Flatpak](https://flathub.org/en/apps/org.geany.Geany).",
-    "icon": {
-      "type": "url",
-      "url": "https://www.geany.org/static/img/geany.svg"
-    }
-  },
-  {
-    "id": "intellij-idea",
-    "name": "Intellij IDEA",
-    "description": "Επεξεργαστής κώδικα για προγραμματιστές Java και Kotlin από την JetBrains",
-    "category": "Dev: Editors",
-    "targets": {
-      "arch": "intellij-idea-ultimate-edition",
-      "nix": "jetbrains.idea",
-      "flatpak": "com.jetbrains.IntelliJ-IDEA-Ultimate",
-      "homebrew": "--cask intellij-idea",
-      "snap": "intellij-idea --classic"
-    },
-    "unavailableReason": "Δεν υπάρχει στα επίσημα αποθετήρια, κατεβάστε το από [JetBrains](https://www.jetbrains.com/idea/download/?section=linux) ή χρησιμοποιήστε [Flatpak](https://flathub.org/en/apps/com.jetbrains.IntelliJ-IDEA-Ultimate) / [Snap](https://snapcraft.io/intellij-idea).",
-    "icon": {
-      "type": "iconify",
-      "set": "logos",
-      "name": "intellij-idea"
-    }
-  },
-  {
-    "id": "pycharm",
-    "name": "Pycharm",
-    "description": "Επεξεργαστής κώδικα για προγραμματιστές Python και επιστήμονες δεδομένων από την JetBrains",
-    "category": "Dev: Editors",
-    "targets": {
-      "arch": "pycharm",
-      "flatpak": "com.jetbrains.PyCharm-Professional",
-      "homebrew": "--cask pycharm",
-      "snap": "pycharm --classic",
-      "nix": "jetbrains.pycharm"
-    },
-    "unavailableReason": "Δεν υπάρχει στα επίσημα αποθετήρια, κατεβάστε το από [JetBrains](https://www.jetbrains.com/pycharm/download/?section=linux) ή χρησιμοποιήστε [Flatpak](https://flathub.org/en/apps/com.jetbrains.PyCharm-Professional) / [Snap](https://snapcraft.io/pycharm).",
-    "icon": {
-      "type": "iconify",
-      "set": "logos",
-      "name": "pycharm"
-    }
-  },
-  {
-    "id": "clion",
-    "name": "CLion",
-    "description": "Επεξεργαστής κώδικα για προγραμματιστές C και C++ από την JetBrains",
-    "category": "Dev: Editors",
-    "targets": {
-      "arch": "clion",
-      "flatpak": "com.jetbrains.CLion",
-      "homebrew": "--cask clion",
-      "snap": "clion --classic",
-      "nix": "jetbrains.clion"
-    },
-    "unavailableReason": "Δεν υπάρχει στα επίσημα αποθετήρια, κατεβάστε το από [JetBrains](https://www.jetbrains.com/clion/download/?section=linux) ή χρησιμοποιήστε [Flatpak](https://flathub.org/en/apps/com.jetbrains.CLion) / [Snap](https://snapcraft.io/clion).",
-    "icon": {
-      "type": "iconify",
-      "set": "logos",
-      "name": "clion"
     }
   }
 ]

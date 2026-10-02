@@ -18,6 +18,12 @@
 
 Καινούργια εγκατάσταση; Νέος υπολογιστής; Δεν θυμάστε τα ονόματα όλων των πακέτων; Ιτσ οκαυ όλοι έχουμε βρεθεί σε αυτή τη θέση.
 
+> [!NOTE]
+> Package mappings are verified against official distro registries and reviewed under strict contribution rules. Repositories evolve over time, so some entries can become outdated or unavailable later. If you spot an issue, please report it so we can fix it quickly.
+
+> [!WARNING]
+> Security notice: TuxMate is a command generator (a wrapper around install logic), not a background installer. You copy and run commands yourself, so always inspect the generated command/script in the UI before executing. Downloadable scripts are produced with strict project rules, but no automation tool can replace user review. Confirm package names, flags, and targets for your distro before execution, and proceed at your own risk.
+
 ## 📦 Υποστηριζόμενοι διαχειριστές πακέτων
 
 - Ubuntu / Debian (apt)
@@ -43,6 +49,14 @@
 - Επανάληψη δοκιμής σύνδεσης με εκθετική αναμονή
 - Γραμμές προόδου με εκτιμώμενο χρόνο ολοκλήρωσης
 - Έγχρωμες αναφορές εξόδου και συνοπτικές αναφορές
+
+- Cross-distro generation: apt (Ubuntu/Debian), pacman + AUR helpers (yay/paru), dnf (Fedora), zypper (openSUSE), nix config output, Flatpak, Snap, and Homebrew.
+- Native-first resolution with npm/script fallbacks only when a distro target is missing.
+- Safe generation: inspectable output, installed-package checks, and retry with exponential backoff.
+- Verification built in: AUR detection + allowlist, Nix unfree checks, and verified Flatpak/Snap badges.
+- Productive UI: copy/download drawer, yay/paru switch, unfree warnings, and distro-aware context.
+- Keyboard-first flow: Vim/arrow navigation, `/` search focus, and fast clear.
+- PWA support with network-first service worker for resilient loading.
 
 
 
@@ -226,6 +240,16 @@ docker run -p 3000:3000 \
 <summary><h4>💳 Χρηματικές συνεισφορές</h4></summary>
 
 Δεν υπάρχει κουτί για φιλοδωρήματα εδώ. Μας αρκεί το γεγονός ότι χρησιμοποιείτε Linux :)
+
+
+If you want to earn some real life karma points, consider donating to the following organizations:
+
+* [KDE e.V.](https://kde.org/community/donations/)
+* [Gnome Foundation](https://www.gnome.org/donate/)
+* [Arch Linux](https://archlinux.org/donate/)
+* [The Tor Project](https://donate.torproject.org/)
+
+Comments, suggestions, bug reports and contributions are welcome.
 
 </details>
 

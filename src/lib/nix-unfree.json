@@ -25,6 +25,8 @@
         "vagrant",
         "jetbrains.idea",
         "jetbrains.pycharm",
-        "jetbrains.clion"
+        "jetbrains.clion",
+        "microsoft-edge",
+        "claude-code"
     ]
 }

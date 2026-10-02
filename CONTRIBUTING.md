@@ -1,6 +1,39 @@
 # Συνεισφορά στο UniMate
 
+## Γρήγορη Πλοήγηση
+
+1.  [Επισκόπηση του έργου](#επισκόπηση-του-έργου)
+2.  [Development Workflow](#development-workflow)
+    *   [Initial Setup](#initial-setup)
+    *   [Running with Docker](#running-with-docker)
+    *   [Quality Assurance](#quality-assurance)
+    *   [Verifying Install Scripts](#verifying-install-scripts)
+3.  [Adding Applications](#adding-applications)
+    *   [Research Protocol](#1-mandatory-research-protocol)
+    *   [Entry Structure](#2-entry-structure)
+    *   [Unavailable Reason](#3-unavailable-reason-guidelines)
+    *   [Platform Rules](#4-platform-specific-rules)
+        *   [Arch Linux](#arch-linux)
+        *   [NixOS](#nixos)
+        *   [Ubuntu/Debian](#ubuntudebian)
+        *   [Flatpak](#flatpak)
+        *   [Snap](#snap)
+        *   [Homebrew](#homebrew)
+    *   [Universal Targets](#universal-targets-npm--script)
+    *   [Icon System](#5-icon-system)
+    *   [Valid Categories](#6-valid-categories)
+4.  [Adding Distributions](#adding-distributions)
+5.  [Pull Request Checklist](#pull-request-checklist)
+    *   [Core Principles](#core-principles)
+    *   [Verification Steps](#verification-steps)
+6.  [Templates](#templates)
+    *   [Pull Request](#pull-request-template)
+    *   [Bug Report](#issue-template-bug-report)
+
+---
+
 ## Επισκόπηση του έργου
+
 
 *   `src/lib/apps/*.json`: Κεντρικό μητρώο αιτήσεων (κατηγοριοποιημένο).
 *   `src/lib/data.ts`: Κεντρικό μητρώο για διανομές, κατηγορίες και τύπους Typescript.
@@ -109,11 +142,19 @@ docker run -it --rm fedora:latest bash -c "dnf check-update; bash"
     "arch": "exact-package-name",      // pacman OR AUR package name
     "flatpak": "com.vendor.AppId",     // FULL Flatpak App ID (reverse DNS)
     "snap": "snap-name",               // Add --classic if needed
-    "homebrew": "formula-name"         // Formula (CLI) or '--cask name' (GUI)
+    "homebrew": "formula-name",        // Formula (CLI) or '--cask name' (GUI)
+    "npm": "@scope/package-name",      // Global npm install (universal fallback)
+    "script": "curl -fsSL ... | bash"  // Custom install script (universal fallback)
   },
+  "note": "Context for universal targets",  // Shown on hover for universal-fallback apps
   "unavailableReason": "Markdown install instructions"
 }
 ```
+
+
+> [!NOTE]
+> **Priority system**: Native distro targets (e.g., `arch`, `ubuntu`) always take precedence over universal targets (`npm`, `script`). If an app has both `arch: "ollama"` and `script: "curl ..."`, the script is only used when the user selects a distro where no native package exists.
+
 
 ### 3. Οδηγίες σχετικά με τους λόγους μη διαθεσιμότητας
 
@@ -258,3 +299,90 @@ EΚάθε εφαρμογή χρειάζεται ένα εικονίδιο! Η μ
 2.  Εισαγάγετέ την στο [`src/lib/generateInstallScript.ts`](src/lib/generateInstallScript.ts).
 3.  Προσθέστε μια περίπτωση για το `distroId` σας στη δήλωση `switch` μέσα στο `generateInstallScript`.
 4.  Προσθέστε επίσης την απλή λογική εντολής μιας γραμμής στο `generateSimpleCommand` μέσα στο ίδιο αρχείο.
+
+---
+
+## 🔀 Pull Request Checklist
+
+### Core Principles
+
+> [!IMPORTANT]
+> **Your PR will be rejected if you violate these rules:**
+>
+> 1.  **Verify Everything**: Submit only verified package names. Guessing is prohibited.
+> 2.  **Official First**: Use official repository packages over third-party options.
+> 3.  **No Unofficial Repos**: Do not include PPAs, COPRs, or unofficial repositories.
+> 4.  **Full IDs**: Use full IDs for Flatpaks (e.g., `org.mozilla.firefox`).
+> 5.  **Strict Casing**: Package names are case-sensitive.
+> 6.  **Link Integrity**: Ensure all links in `unavailableReason` are direct and working.
+
+### Verification Steps
+**Verify before submitting:**
+- [ ] Package names verified on official search pages (Repology, Arch, etc).
+- [ ] Case sensitivity checked (especially openSUSE).
+- [ ] Arch packages verified (Official vs AUR).
+- [ ] No PPAs used for Debian/Ubuntu; Main/Universe only.
+- [ ] Flatpak IDs are full reverse-DNS style.
+- [ ] Snap `--classic` flag verification.
+- [ ] Nix unfree packages added to JSON.
+- [ ] Homebrew Casks prefixed correctly.
+- [ ] Universal targets: `npm`/`script` only used as fallbacks, `note` field provided.
+- [ ] Script URLs verified as official, stable endpoints.
+- [ ] `npm run lint` & `npm run test` passed.
+
+---
+
+## 📝 Templates
+
+### Pull Request Template
+
+```markdown
+## Summary
+Brief description of changes.
+
+## Changes
+| App Name | Category | Sources |
+|----------|----------|---------|
+| Example  | Dev: Tool| apt, pacman |
+
+## Verification
+> Package names verified against official sources.
+
+| Source | Link |
+|--------|------|
+| Repology | [Link](...) |
+| Arch | [Link](...) |
+| ... | ... |
+
+## Testing
+- [ ] `npm run dev` working
+- [ ] `npm run build` passed
+- [ ] `npm run test` passed
+- [ ] `npm run lint` passed
+
+
+## Screenshots (if applicable)
+
+<!-- Add screenshots for UI changes -->
+
+```
+
+### Issue Template (Bug Report)
+
+```markdown
+## 🐛 Bug Report
+
+**Environment**:
+- OS: [e.g. Arch Linux]
+- Browser: [e.g. Firefox 120]
+
+**Steps to Reproduce**:
+1. ...
+2. ...
+
+**Details**:
+
+
+**Logs/Screenshots**:
+[Paste console logs or attach screenshots]
+```

@@ -1,5 +1,23 @@
 [
     {
+        "id": "ivpn",
+        "name": "IVPN",
+        "description": "Private VPN with no-logging policy",
+        "category": "VPN & Network",
+        "targets": {
+            "arch": "ivpn-ui",
+            "nix": "ivpn-ui",
+            "homebrew": "--cask ivpn",
+            "snap": "ivpn"
+        },
+        "unavailableReason": "Not in official repos. Follow instructions at [ivpn.net/en/apps-linux](https://www.ivpn.net/en/apps-linux/).",
+        "icon": {
+            "type": "url",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Logo_of_IVPN.svg"
+        }
+    },
+       
+    {
         "id": "protonvpn",
         "name": "Proton VPN",
         "description": "Ασφαλές VPN από τους δημιουργούς του ProtonMail",
