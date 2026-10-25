@@ -21,8 +21,13 @@ interface CommandDrawerProps {
     setHasYayInstalled: (value: boolean) => void;
     selectedHelper: 'yay' | 'paru';
     setSelectedHelper: (helper: 'yay' | 'paru') => void;
+    // general distro settings
     distroColor: string;
     distroId: DistroId;
+    //unios distro setting
+    needsKeyring: boolean,
+    keyringAppNames: string[],
+    // unfree packages - nix
     hasUnfreePackages?: boolean;
     unfreeAppNames?: string[];
     activeShortcut?: string | null;
@@ -46,11 +51,16 @@ export function CommandDrawer({
     setSelectedHelper,
     distroColor,
     distroId,
+    needsKeyring = false,
+    keyringAppNames = [],
     hasUnfreePackages = false,
     unfreeAppNames = [],
     activeShortcut,
 }: CommandDrawerProps) {
+    //constants that checks distro chosen
     const isNix = distroId === 'nix';
+    const isUnios = distroId === 'unios';
+
     // Swipe to dismiss
     const [dragOffset, setDragOffset] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
@@ -157,6 +167,21 @@ export function CommandDrawer({
                             setSelectedHelper={setSelectedHelper}
                             distroColor={distroColor}
                         />
+                    )}
+
+                    {isUnios && needsKeyring && (
+                        <div className="mb-4 p-3 rounded-lg bg-amber-500/10 border border-amber-500/30">
+                            <div className="flex items-start gap-2">
+                                <AlertTriangle className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />
+                                <div className="text-sm">
+                                    <p className="font-medium text-amber-500">Keyring Needed</p>
+                                    <p className="text-[var(--text-muted)] mt-1">
+                                        {keyringAppNames.join(', ')} require to first add server key like this: <br></br> <code className="px-1 py-0.5 rounded bg-[var(--bg-tertiary)] text-xs">curl -fsSL https://raw.githubusercontent.com/open-source-uom/UniOS-keyring/main/build-unios.gpg | sudo pacman-key --add -
+sudo pacman-key --lsign-key 9684CA65197ED120FAEF68D54D84EB67B458B8C2</code>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     )}
 
                     {isNix && hasUnfreePackages && (

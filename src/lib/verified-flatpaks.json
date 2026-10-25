@@ -1,8 +1,8 @@
 {
   "meta": {
-    "fetchedAt": "2026-10-24T09:30:14.972Z"
+    "fetchedAt": "2026-10-25T13:28:54.601Z"
   },
-  "count": 777,
+  "count": 778,
   "apps": [
     "ai.jan.Jan",
     "app.bluebubbles.BlueBubbles",
@@ -22,7 +22,6 @@
     "app.opencomic.OpenComic",
     "app.organicmaps.desktop",
     "app.polychromatic.controller",
-    "app.rednotebook.RedNotebook",
     "app.tintero.Tintero",
     "app.twintaillauncher.ttl",
     "app.xemu.xemu",
@@ -189,6 +188,7 @@
     "com.tomjwatson.Emote",
     "com.toolstack.Folio",
     "com.ulaa.Ulaa",
+    "com.unicornsonlsd.finamp",
     "com.usebottles.bottles",
     "com.usebruno.Bruno",
     "com.valvesoftware.SteamLink",
@@ -340,6 +340,7 @@
     "io.github.hkdb.Aerion",
     "io.github.htkhiem.Euphonica",
     "io.github.idescriptor.iDescriptor",
+    "io.github.igorlogius.scr2ppm",
     "io.github.ilya_zlobintsev.LACT",
     "io.github.jeffshee.Hidamari",
     "io.github.jliljebl.Flowblade",
@@ -350,7 +351,6 @@
     "io.github.libvibrant.vibrantLinux",
     "io.github.limo_app.limo",
     "io.github.linx_systems.ClamUI",
-    "io.github.lluciocc.Vish",
     "io.github.lullabyX.sone",
     "io.github.maniacx.BudsLink",
     "io.github.marco_calautti.DeltaPatcher",
@@ -365,6 +365,7 @@
     "io.github.mrvladus.List",
     "io.github.nacho.mundi",
     "io.github.nokse22.Exhibit",
+    "io.github.nokse22.inspector",
     "io.github.nozwock.Packet",
     "io.github.nroduit.Weasis",
     "io.github.nuttyartist.notes",
@@ -397,7 +398,6 @@
     "io.github.sugarycandybar.Hosty",
     "io.github.swordpuffin.rewaita",
     "io.github.swordpuffin.wardrobe",
-    "io.github.tanaybhomia.DeepDive",
     "io.github.tanaybhomia.Whisp",
     "io.github.thetumultuousunicornofdarkness.cpu-x",
     "io.github.tntwise.REAL-Video-Enhancer",
@@ -582,6 +582,7 @@
     "org.gnome.World.Secrets",
     "org.gnome.baobab",
     "org.gnome.clocks",
+    "org.gnome.design.Emblem",
     "org.gnome.design.IconLibrary",
     "org.gnome.font-viewer",
     "org.gnome.gedit",

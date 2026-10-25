@@ -4,6 +4,8 @@ import { useState, useMemo, useCallback, useEffect } from 'react';
 import { distros, apps, type DistroId, isAppAvailable as globalIsAppAvailable } from '@/lib/data';
 import { isAurPackage } from '@/lib/aur';
 import { isUnfreePackage } from '@/lib/nixUnfree';
+//unios utility
+import { needsKeyring } from '@/lib/uniosNeedsKeyring';
 
 export { isAurPackage, AUR_PATTERNS, KNOWN_AUR_PACKAGES } from '@/lib/aur';
 export interface UseLinuxInitReturn {
@@ -25,6 +27,8 @@ export interface UseLinuxInitReturn {
     hasAurPackages: boolean;
     aurPackageNames: string[];
     aurAppNames: string[];
+    needsKeyring: boolean;
+    keyringAppNames: string[];
     hasUnfreePackages: boolean;
     unfreeAppNames: string[];
     isHydrated: boolean;
@@ -128,6 +132,24 @@ export function useLinuxInit(): UseLinuxInitReturn {
         return { hasUnfree: unfreeAppNames.length > 0, appNames: unfreeAppNames };
     }, [selectedDistro, selectedApps]);
 
+     const needsKeyringPkgInfo = useMemo(() => {
+        if (selectedDistro !== 'unios') {
+            return { needsKeyring: false, keyringAppNames: [] as string[] };
+        }
+
+        const keyringAppNames: string[] = [];
+        selectedApps.forEach(appId => {
+            const app = apps.find(a => a.id === appId);
+            if (app) {
+                const pkg = app.targets['unios'];
+                if (pkg && needsKeyring(pkg)) {
+                    keyringAppNames.push(app.name);
+                }
+            }
+        });
+        return { needsKeyring: keyringAppNames.length > 0, keyringAppNames: keyringAppNames }
+     }, [selectedDistro, selectedApps])
+    
     const isAppAvailable = useCallback((appId: string): boolean => {
         const app = apps.find(a => a.id === appId);
         if (!app) return false;
@@ -196,13 +218,14 @@ export function useLinuxInit(): UseLinuxInitReturn {
         const packageNames: string[] = [];
         const npmPkgs: string[] = [];
         const scriptPkgs: string[] = [];
+        const keyringPkgs: string[] = [];
 
         selectedApps.forEach(appId => {
             const app = apps.find(a => a.id === appId);
             if (app) {
                 const pkg = app.targets[selectedDistro];
                 if (pkg) {
-                    packageNames.push(pkg);
+                    packageNames.push(pkg); 
                 } else {
                     if (app.targets.npm) npmPkgs.push(app.targets.npm);
                     if (app.targets.script) scriptPkgs.push(app.targets.script);
@@ -233,7 +256,9 @@ export function useLinuxInit(): UseLinuxInitReturn {
         let baseCmd = '';
 
         if (packageNames.length > 0) {
-            if (selectedDistro === 'nix') {
+            if (selectedDistro === 'unios' && needsKeyringPkgInfo.needsKeyring){
+                baseCmd = `sudo pacman -S --needed --noconfirm unios-keyring ${packageNames.join(' ')}`;
+            } else if (selectedDistro === 'nix') {
                 const sortedPkgs = packageNames.filter(p => p.trim()).sort();
                 const pkgList = sortedPkgs.map(p => `    ${p}`).join('\\n');
                 baseCmd = `environment.systemPackages = with pkgs; [\\n${pkgList}\\n];`;
@@ -272,7 +297,7 @@ export function useLinuxInit(): UseLinuxInitReturn {
         }
 
         return appendScripts(appendExtras(baseCmd));
-    }, [selectedDistro, selectedApps, aurPackageInfo.hasAur, hasYayInstalled, selectedHelper]);
+    }, [selectedDistro, selectedApps, aurPackageInfo.hasAur, needsKeyringPkgInfo.needsKeyring, hasYayInstalled, selectedHelper]);
 
     return {
         selectedDistro,
@@ -293,6 +318,8 @@ export function useLinuxInit(): UseLinuxInitReturn {
         hasAurPackages: aurPackageInfo.hasAur,
         aurPackageNames: aurPackageInfo.packages,
         aurAppNames: aurPackageInfo.appNames,
+        needsKeyring: needsKeyringPkgInfo.needsKeyring,
+        keyringAppNames: needsKeyringPkgInfo.keyringAppNames,
         hasUnfreePackages: unfreePackageInfo.hasUnfree,
         unfreeAppNames: unfreePackageInfo.appNames,
         isHydrated: hydrated,

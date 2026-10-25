@@ -25,6 +25,8 @@ interface CommandFooterProps {
     clearAll: () => void;
     selectedHelper: 'yay' | 'paru';
     setSelectedHelper: (helper: 'yay' | 'paru') => void;
+    needsKeyring: boolean,
+    keyringAppNames: string[],
     hasUnfreePackages?: boolean;
     unfreeAppNames?: string[];
     drawerOpen?: boolean;
@@ -50,6 +52,8 @@ export function CommandFooter({
     clearAll,
     selectedHelper,
     setSelectedHelper,
+    needsKeyring,
+    keyringAppNames,
     hasUnfreePackages,
     unfreeAppNames,
     drawerOpen: externalDrawerOpen,
@@ -106,6 +110,7 @@ export function CommandFooter({
         showAur = true;
     }
 
+    const isUnios = selectedDistro === 'unios';
     const distroDisplayName = distros.find(d => d.id === selectedDistro)?.name || selectedDistro;
     const distroColor = distros.find(d => d.id === selectedDistro)?.color || 'var(--accent)';
 
@@ -167,6 +172,8 @@ export function CommandFooter({
                 setSelectedHelper={setSelectedHelper}
                 distroColor={distroColor}
                 distroId={selectedDistro}
+                needsKeyring = {needsKeyring}
+                keyringAppNames = {keyringAppNames}
                 hasUnfreePackages={hasUnfreePackages}
                 unfreeAppNames={unfreeAppNames}
             />
