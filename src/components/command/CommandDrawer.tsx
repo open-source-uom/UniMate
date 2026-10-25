@@ -59,7 +59,7 @@ export function CommandDrawer({
 }: CommandDrawerProps) {
     //constants that checks distro chosen
     const isNix = distroId === 'nix';
-    const isUnios = distroId === 'unios';
+    const isArch = distroId === 'arch'; //for keyring warning
 
     // Swipe to dismiss
     const [dragOffset, setDragOffset] = useState(0);
@@ -169,7 +169,7 @@ export function CommandDrawer({
                         />
                     )}
 
-                    {isUnios && needsKeyring && (
+                    {isArch && needsKeyring && (
                         <div className="mb-4 p-3 rounded-lg bg-amber-500/10 border border-amber-500/30">
                             <div className="flex items-start gap-2">
                                 <AlertTriangle className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />

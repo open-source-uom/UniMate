@@ -133,7 +133,7 @@ export function useLinuxInit(): UseLinuxInitReturn {
     }, [selectedDistro, selectedApps]);
 
      const needsKeyringPkgInfo = useMemo(() => {
-        if (selectedDistro !== 'unios') {
+        if (selectedDistro !== 'arch') {
             return { needsKeyring: false, keyringAppNames: [] as string[] };
         }
 
@@ -218,7 +218,6 @@ export function useLinuxInit(): UseLinuxInitReturn {
         const packageNames: string[] = [];
         const npmPkgs: string[] = [];
         const scriptPkgs: string[] = [];
-        const keyringPkgs: string[] = [];
 
         selectedApps.forEach(appId => {
             const app = apps.find(a => a.id === appId);
@@ -256,7 +255,7 @@ export function useLinuxInit(): UseLinuxInitReturn {
         let baseCmd = '';
 
         if (packageNames.length > 0) {
-            if (selectedDistro === 'unios' && needsKeyringPkgInfo.needsKeyring){
+            if (selectedDistro === 'arch' && needsKeyringPkgInfo.needsKeyring){
                 baseCmd = `sudo pacman -S --needed --noconfirm unios-keyring ${packageNames.join(' ')}`;
             } else if (selectedDistro === 'nix') {
                 const sortedPkgs = packageNames.filter(p => p.trim()).sort();

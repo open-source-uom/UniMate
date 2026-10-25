@@ -82,7 +82,7 @@ export function Sidebar({
             selectedAppIds: selectedApps,
             helper: selectedHelper,
         });
-        const isUnios = selectedDistro === 'unios';
+        
         const isNix = selectedDistro === 'nix';
         const mimeType = isNix ? 'text/plain' : 'text/x-shellscript';
         const blob = new Blob([script], { type: mimeType });
@@ -360,7 +360,7 @@ export function Sidebar({
                     </>
                 )}
 
-                {selectedDistro === 'unios' && needsKeyring && keyringAppNames && keyringAppNames.length > 0 && (
+                {selectedDistro === 'arch' && needsKeyring && keyringAppNames && keyringAppNames.length > 0 && (
                     <>
                         <div className="mx-5 my-3 border-t border-[var(--border-primary)]" />
                         <div className="px-5 pb-2">

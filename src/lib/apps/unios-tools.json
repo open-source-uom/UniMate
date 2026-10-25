@@ -5,7 +5,8 @@
   "description": "Εργαλείο λήψης λογισμικού για ελληνικά πανεπιστήμια.",  
   "category": "UniOS Tools",
   "targets": {
-    "unios": "unibackpack"
+    "unios": "unibackpack",
+    "arch": "unibackpack"
         },              
   "icon": {
     "type": "url",                           
@@ -20,9 +21,9 @@
   "description": "Μια βοηθητική εφαρμογή για το UniOS γραμμένη σε python/qt",  
   "category": "UniOS Tools",
   "targets": {
-    "unios": "unidesk"
-    
-        },              
+    "unios": "unidesk",
+    "arch": "unidesk"
+    },              
   "icon": {                           
     "type": "url",
     "url": "https://github.com/open-source-uom/UniOS-landing-page/blob/main/assets/logo/icon1-05.png?raw=true"
@@ -35,7 +36,8 @@
   "description": "Εφαρμογή ροής ειδήσεων πανεπιστημίων.",  
   "category": "UniOS Tools",
   "targets": {
-    "unios": "uninews"
+    "unios": "uninews",
+    "arch":"uninews"
         },              
   "icon": {
     "type": "url",                           
@@ -50,7 +52,8 @@
   "description": "Εφαρμογή ενημερώσεων για το UniOS.",  
   "category": "UniOS Tools",
   "targets": {
-    "unios": "unios-update"
+    "unios": "unios-update",
+    "arch": "unios-update"
         },              
   "icon": {
     "type": "url",                           
@@ -65,7 +68,8 @@
   "description": "Εφαρμογή που δίνει στο UniOS την πρωταρχική του εμφάνιση.",  
   "category": "UniOS Tools",
   "targets": {
-    "unios": "unios-desktop-settings"
+    "unios": "unios-desktop-settings",
+    "arch": "unios-desktop-settings"
         },              
   "icon": {
     "type": "url",                           
@@ -80,7 +84,8 @@
   "description": "Εφαρμογή που δίνει πρόσβαση στο αποθετήριο πακέτων του UniOS.",  
   "category": "UniOS Tools",
   "targets": {
-    "unios": "unios-keyring"
+    "unios": "unios-keyring",
+    "arch": "unios-keyring"
         },              
   "icon": {
     "type": "url",                           
