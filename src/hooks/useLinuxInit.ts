@@ -102,7 +102,7 @@ export function useLinuxInit(): UseLinuxInitReturn {
         selectedApps.forEach(appId => {
             const app = apps.find(a => a.id === appId);
             if (app) {
-                const pkg = app.targets['arch'];
+                const pkg = app.targets['arch'] || app.targets['unios'];
                 if (pkg && isAurPackage(pkg)) {
                     aurPkgs.push(pkg);
                     aurAppNames.push(app.name);
@@ -268,7 +268,7 @@ export function useLinuxInit(): UseLinuxInitReturn {
                 } else {
                     baseCmd = packageNames.map(p => `sudo snap install ${p}`).join(' && ');
                 }
-            } else if (selectedDistro === 'arch' || selectedDistro === 'unios' && aurPackageInfo.hasAur) {
+            } else if ((selectedDistro === 'arch' || selectedDistro === 'unios') && aurPackageInfo.hasAur) {
                 if (!hasYayInstalled) {
                     const helperName = selectedHelper; // yay or paru
                     const installHelperCmd = `sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/${helperName}.git /tmp/${helperName} && cd /tmp/${helperName} && makepkg -si --noconfirm && cd - && rm -rf /tmp/${helperName}`;
