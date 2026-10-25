@@ -369,7 +369,7 @@ export function Sidebar({
                                     <span className="text-amber-400">⚠</span> Keyring Needed
                                 </p>
                                 <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
-                                    {keyringAppNames.join(', ')} require to first add server key like this: <br></br>
+                                    {keyringAppNames.join(', ')} require to first add UniOS's server key like this: <br></br>
                                     <code className="px-1.5 py-0.5 bg-[var(--bg-tertiary)] text-[10px] font-mono rounded-md">curl -fsSL https://raw.githubusercontent.com/open-source-uom/UniOS-keyring/main/build-unios.gpg | sudo pacman-key --add -
 sudo pacman-key --lsign-key 9684CA65197ED120FAEF68D54D84EB67B458B8C2</code>
                                 </p>

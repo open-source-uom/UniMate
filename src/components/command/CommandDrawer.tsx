@@ -176,7 +176,7 @@ export function CommandDrawer({
                                 <div className="text-sm">
                                     <p className="font-medium text-amber-500">Keyring Needed</p>
                                     <p className="text-[var(--text-muted)] mt-1">
-                                        {keyringAppNames.join(', ')} require to first add server key like this: <br></br> <code className="px-1 py-0.5 rounded bg-[var(--bg-tertiary)] text-xs">curl -fsSL https://raw.githubusercontent.com/open-source-uom/UniOS-keyring/main/build-unios.gpg | sudo pacman-key --add -
+                                        {keyringAppNames.join(', ')} require to first add UniOS's server key like this: <br></br> <code className="px-1 py-0.5 rounded bg-[var(--bg-tertiary)] text-xs">curl -fsSL https://raw.githubusercontent.com/open-source-uom/UniOS-keyring/main/build-unios.gpg | sudo pacman-key --add -
 sudo pacman-key --lsign-key 9684CA65197ED120FAEF68D54D84EB67B458B8C2</code>
                                     </p>
                                 </div>
