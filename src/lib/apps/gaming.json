@@ -27,6 +27,7 @@
         "description": "Ανοιχτή πλατφόρμα παιχνιδιών για όλα τα παιχνίδια σου",
         "category": "Gaming",
         "targets": {
+            "unios": "lutris",
             "ubuntu": "lutris",
             "arch": "lutris",
             "fedora": "lutris",
@@ -48,6 +49,7 @@
         "description": "Εκκινητής ανοιχτού κώδικα της Epic Games και της GOG",
         "category": "Gaming",
         "targets": {
+            "unios": "heroic-games-launcher-bin",
             "arch": "heroic-games-launcher-bin",
             "nix": "heroic",
             "flatpak": "com.heroicgameslauncher.hgl",
@@ -67,6 +69,7 @@
         "description": "Εφαρμογή ανοιχτού κώδικα εκκίνησης Minecraft με υποστήριξη mods",
         "category": "Gaming",
         "targets": {
+            "unios": "prismlauncher",
             "arch": "prismlauncher",
             "nix": "prismlauncher",
             "flatpak": "org.prismlauncher.PrismLauncher",
@@ -84,6 +87,7 @@
         "description": "Ολοκληρωμένο περιβάλλον εργασίας εξομοιωτή για ρετρό παιχνίδια",
         "category": "Gaming",
         "targets": {
+            "unios": "retroarch",
             "ubuntu": "retroarch",
             "debian": "retroarch",
             "arch": "retroarch",
@@ -107,6 +111,7 @@
         "description": "Επικάλυψη Vulkan/OpenGL για την παρακολούθηση των FPS και του hardware",
         "category": "Gaming",
         "targets": {
+            "unios": "mangohud",
             "ubuntu": "mangohud",
             "debian": "mangohud",
             "arch": "mangohud",
@@ -128,6 +133,7 @@
         "description": "Βελτιστοποιεί την απόδοση του συστήματος Linux για gaming",
         "category": "Gaming",
         "targets": {
+            "unios": "gamemode",
             "ubuntu": "gamemode",
             "debian": "gamemode",
             "arch": "gamemode",
@@ -147,6 +153,7 @@
         "description": "Εγκατάσταση και διαχείριση του Proton-GE για παιχνίδια του Steam",
         "category": "Gaming",
         "targets": {
+            "unios": "protonup-qt-bin",
             "arch": "protonup-qt-bin",
             "nix": "protonup-qt",
             "flatpak": "net.davidotek.pupgui2"
@@ -165,6 +172,7 @@
         "description": "Αντιστοίχιση κουμπιών χειριστηρίου με ενέργειες πληκτρολογίου/ποντικιού",
         "category": "Gaming",
         "targets": {
+            "unios": "antimicrox",
             "ubuntu": "antimicrox",
             "debian": "antimicrox",
             "arch": "antimicrox",
@@ -187,6 +195,7 @@
         "description": "GUI για MangoHud, vkBasalt, και ReplaySorcery",
         "category": "Gaming",
         "targets": {
+            "unios": "goverlay",
             "ubuntu": "goverlay",
             "debian": "goverlay",
             "arch": "goverlay",

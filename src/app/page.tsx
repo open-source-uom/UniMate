@@ -37,6 +37,8 @@ export default function Home() {
         isHydrated,
         selectedHelper,
         setSelectedHelper,
+        needsKeyring,
+        keyringAppNames,
         hasUnfreePackages,
         unfreeAppNames,
     } = useLinuxInit();
@@ -262,6 +264,8 @@ export default function Home() {
                 aurAppNames={aurAppNames}
                 selectedHelper={selectedHelper}
                 setSelectedHelper={setSelectedHelper}
+                needsKeyring = {needsKeyring}
+                keyringAppNames = {keyringAppNames}
                 hasUnfreePackages={hasUnfreePackages}
                 unfreeAppNames={unfreeAppNames}
                 onOpenDrawer={openDrawer}
@@ -410,6 +414,8 @@ export default function Home() {
                 clearAll={clearAll}
                 selectedHelper={selectedHelper}
                 setSelectedHelper={setSelectedHelper}
+                needsKeyring = {needsKeyring}
+                keyringAppNames = {keyringAppNames}
                 hasUnfreePackages={hasUnfreePackages}
                 unfreeAppNames={unfreeAppNames}
                 drawerOpen={drawerOpen}

@@ -17,10 +17,10 @@
     "framer-motion": "^12.23.26",
     "gsap": "^3.14.2",
     "lucide-react": "^0.561.0",
-    "next": "^16.1.6",
+    "next": "^16.4.1",
     "next-intl": "^4.8.3",
-    "react": "19.2.1",
-    "react-dom": "19.2.1",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
@@ -40,5 +40,10 @@
   },
   "overrides": {
     "minimatch": "^10.2.1"
+  },
+  "allowScripts": {
+    "next@16.4.1": true,
+    "react@19.2.1": true,
+    "react-dom@19.2.1": true
   }
 }

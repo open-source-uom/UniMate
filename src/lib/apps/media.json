@@ -5,6 +5,7 @@
         "description": "Πολυχρηστικό πρόγραμμα αναπαραγωγής πολυμέσων που υποστηρίζει όλες τις μορφές αρχείων",
         "category": "Media",
         "targets": {
+            "unios": "vlc",
             "ubuntu": "vlc",
             "debian": "vlc",
             "arch": "vlc",
@@ -28,6 +29,7 @@
         "description": "Ελαφρύ και εξαιρετικά παραμετροποιήσιμο πρόγραμμα αναπαραγωγής πολυμέσων",
         "category": "Media",
         "targets": {
+            "unios": "mpv",
             "ubuntu": "mpv",
             "debian": "mpv",
             "arch": "mpv",
@@ -51,6 +53,7 @@
         "description": "Απλό περιβάλλον εργασίας GTK για τον αναπαραγωγέα mpv",
         "category": "Media",
         "targets": {
+            "unios": "celluloid",
             "ubuntu": "celluloid",
             "debian": "celluloid",
             "arch": "celluloid",
@@ -73,6 +76,7 @@
         "description": "Πρόγραμμα αναπαραγωγής μουσικής για τοπική συλλογή αρχείων ήχου",
         "category": "Media",
         "targets": {
+            "unios": "strawberry",
             "ubuntu": "strawberry",
             "debian": "strawberry",
             "arch": "strawberry",
@@ -93,6 +97,7 @@
         "description": "Δημοφιλής υπηρεσία ροής μουσικής",
         "category": "Media",
         "targets": {
+            "unios": "spotify",
             "arch": "spotify",
             "nix": "spotify",
             "flatpak": "com.spotify.Client",
@@ -113,6 +118,7 @@
         "description": "Δωρεάν πρόγραμμα ανοιχτού κώδικα επεξεργασίας και εγγραφής ήχου",
         "category": "Media",
         "targets": {
+            "unios": "audacity",
             "ubuntu": "audacity",
             "debian": "audacity",
             "arch": "audacity",
@@ -136,6 +142,7 @@
         "description": "Ισχυρό πρόγραμμα επεξεργασίας βίντεο ανοιχτού κώδικα από το KDE",
         "category": "Media",
         "targets": {
+            "unios": "kdenlive",
             "ubuntu": "kdenlive",
             "debian": "kdenlive",
             "arch": "kdenlive",
@@ -159,6 +166,7 @@
         "description": "Λογισμικό ροής και εγγραφής που ανταποκρίνεται στα πρότυπα του κλάδου",
         "category": "Media",
         "targets": {
+            "unios": "obs-studio",
             "ubuntu": "obs-studio",
             "debian": "obs-studio",
             "arch": "obs-studio",
@@ -182,6 +190,7 @@
         "description": "Το πολυεργαλείο της επεξεργασίας βίντεο και ήχου",
         "category": "Media",
         "targets": {
+            "unios": "ffmpeg",
             "ubuntu": "ffmpeg",
             "debian": "ffmpeg",
             "arch": "ffmpeg",
@@ -204,6 +213,7 @@
         "description": "Μετατροπέας βίντεο ανοιχτού κώδικα για οποιαδήποτε μορφή",
         "category": "Media",
         "targets": {
+            "unios": "handbrake",
             "ubuntu": "handbrake",
             "debian": "handbrake",
             "arch": "handbrake",
@@ -227,6 +237,7 @@
         "description": "Σύγχρονο κέντρο πολυμέσων με προσθήκες για streaming",
         "category": "Media",
         "targets": {
+            "unios": "stremio",
             "arch": "stremio",
             "nix": "stremio",
             "flatpak": "com.stremio.Stremio",
@@ -246,6 +257,7 @@
         "description": "Σύστημα οικιακού κινηματογράφου και κέντρο πολυμέσων ανοιχτού κώδικα",
         "category": "Media",
         "targets": {
+            "unios": "kodi",
             "ubuntu": "kodi",
             "debian": "kodi",
             "arch": "kodi",
@@ -269,6 +281,7 @@
         "description": "Σύγχρονος παίκτης βίντεο Qt/QML με την υποστήριξη του mpv",
         "category": "Media",
         "targets": {
+            "unios": "haruna",
             "ubuntu": "haruna",
             "debian": "haruna",
             "arch": "haruna",
@@ -291,6 +304,7 @@
         "description": "Ακούστε διαδικτυακούς ραδιοφωνικούς σταθμούς από όλο τον κόσμο",
         "category": "Media",
         "targets": {
+            "unios": "shortwave",
             "ubuntu": "shortwave",
             "debian": "shortwave",
             "arch": "shortwave",

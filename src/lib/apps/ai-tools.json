@@ -5,6 +5,7 @@
     "description": "AI-powered coding platform and environment",
     "category": "AI Tools",
     "targets": {
+      "unios": "opencode",
       "homebrew": "opencode",
       "arch": "opencode",
       "nix": "opencode",
@@ -78,6 +79,7 @@
     "description": "Get up and running with large language models locally",
     "category": "AI Tools",
     "targets": {
+      "unios": "ollama",
       "fedora": "ollama",
       "opensuse": "ollama",
       "arch": "ollama",
@@ -114,6 +116,7 @@
     "description": "Open-source ChatGPT-alternative that runs locally offline",
     "category": "AI Tools",
     "targets": {
+      "unios": "jan-bin",
       "arch": "jan-bin",
       "nix": "jan",
       "homebrew": "--cask jan",

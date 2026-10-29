@@ -25,6 +25,8 @@ interface CommandFooterProps {
     clearAll: () => void;
     selectedHelper: 'yay' | 'paru';
     setSelectedHelper: (helper: 'yay' | 'paru') => void;
+    needsKeyring: boolean,
+    keyringAppNames: string[],
     hasUnfreePackages?: boolean;
     unfreeAppNames?: string[];
     drawerOpen?: boolean;
@@ -50,6 +52,8 @@ export function CommandFooter({
     clearAll,
     selectedHelper,
     setSelectedHelper,
+    needsKeyring,
+    keyringAppNames,
     hasUnfreePackages,
     unfreeAppNames,
     drawerOpen: externalDrawerOpen,
@@ -96,7 +100,17 @@ export function CommandFooter({
         return () => document.removeEventListener('keydown', handleEscape);
     }, [drawerOpen, closeDrawer]);
 
-    const showAur = selectedDistro === 'arch' && hasAurPackages;
+    //Show AUR options and commands AND when Unios is chosen
+    //const showAur = selectedDistro === 'arch' && hasAurPackages;
+    let showAur = false;
+    if (selectedDistro === 'arch' && hasAurPackages){
+        showAur = true;
+    }
+    if(selectedDistro === 'unios' && hasAurPackages){
+        showAur = true;
+    }
+
+    const isUnios = selectedDistro === 'unios';
     const distroDisplayName = distros.find(d => d.id === selectedDistro)?.name || selectedDistro;
     const distroColor = distros.find(d => d.id === selectedDistro)?.color || 'var(--accent)';
 
@@ -158,6 +172,8 @@ export function CommandFooter({
                 setSelectedHelper={setSelectedHelper}
                 distroColor={distroColor}
                 distroId={selectedDistro}
+                needsKeyring = {needsKeyring}
+                keyringAppNames = {keyringAppNames}
                 hasUnfreePackages={hasUnfreePackages}
                 unfreeAppNames={unfreeAppNames}
             />
@@ -272,7 +288,7 @@ export function CommandFooter({
                                         }}
                                     >
                                         <X className="w-4 h-4 shrink-0 opacity-70" />
-                                        <span className="hidden sm:inline whitespace-nowrap">Εκαθάριση</span>
+                                        <span className="hidden sm:inline whitespace-nowrap">Εκκαθάριση</span>
                                     </button>
 
                                     <button

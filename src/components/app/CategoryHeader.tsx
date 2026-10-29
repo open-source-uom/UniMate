@@ -1,12 +1,13 @@
 'use client';
 
 import {
-    ChevronRight, Globe, MessageCircle, Code2, FileCode, Wrench,
+    AppWindow, ChevronRight, Globe, MessageCircle, Code2, FileCode, Wrench,
     Terminal, Command, Play, Palette, Gamepad2, Briefcase,
     Network, Lock, Share2, Cpu, Sparkles, type LucideIcon
 } from 'lucide-react';
 
 const CATEGORY_ICONS: Record<string, LucideIcon> = {
+    'UniOS Tools': AppWindow,
     'Web Browsers': Globe,
     'Communication': MessageCircle,
     'Dev: Languages': Code2,
@@ -42,6 +43,7 @@ const COLOR_MAP: Record<string, string> = {
     'teal': '#14b8a6',
     'gray': '#6b7280',
     'fuchsia': '#d946ef',
+    'violet': '#c48cb6'
 };
 
 // Category header.

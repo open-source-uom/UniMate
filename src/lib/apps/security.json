@@ -5,6 +5,7 @@
         "description": "Διαχειριστής κωδικών πρόσβασης ανοιχτού κώδικα με συγχρονισμό στο cloud",
         "category": "Security",
         "targets": {
+            "unios": "bitwarden",
             "arch": "bitwarden",
             "nix": "bitwarden",
             "flatpak": "com.bitwarden.desktop",
@@ -25,6 +26,7 @@
         "description": "Ασφαλής διαχειριστής κωδικών πρόσβασης με προτεραιότητα στη λειτουργία εκτός σύνδεσης",
         "category": "Security",
         "targets": {
+            "unios": "keepassxc",
             "ubuntu": "keepassxc",
             "debian": "keepassxc",
             "arch": "keepassxc",
@@ -48,6 +50,7 @@
         "description": "Δωρεάν κρυπτογράφηση δίσκου με βάση το TrueCrypt",
         "category": "Security",
         "targets": {
+            "unios": "veracrypt",
             "arch": "veracrypt",
             "opensuse": "veracrypt",
             "nix": "veracrypt",
@@ -65,6 +68,7 @@
         "description": "GNU Privacy Guard για κρυπτογράφηση και υπογραφή",
         "category": "Security",
         "targets": {
+            "unios": "gnupg",
             "ubuntu": "gnupg",
             "debian": "gnupg",
             "arch": "gnupg",
@@ -87,6 +91,7 @@
         "description": "Περιβάλλον ελέγχου SUID για τον περιορισμό των περιβαλλόντων εφαρμογών",
         "category": "Security",
         "targets": {
+            "unios": "firejail",
             "ubuntu": "firejail",
             "debian": "firejail",
             "arch": "firejail",
@@ -106,6 +111,7 @@
         "description": "Μηχανισμός προστασίας από ιούς ανοιχτού κώδικα για την ανίχνευση κακόβουλου λογισμικού",
         "category": "Security",
         "targets": {
+            "unios": "clamav",
             "ubuntu": "clamav",
             "debian": "clamav",
             "arch": "clamav",
@@ -126,6 +132,7 @@
         "description": "Εφαρμογή επαλήθευσης ταυτότητας 2FA ανοιχτού κώδικα, με αντίγραφα ασφαλείας με κρυπτογράφηση από άκρο σε άκρο",
         "category": "Security",
         "targets": {
+            "unios": "ente-auth-bin",
             "arch": "ente-auth-bin",
             "nix": "ente-auth",
             "flatpak": "io.ente.auth",

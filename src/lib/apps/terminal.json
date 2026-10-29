@@ -5,6 +5,7 @@
         "description": "Ισχυρό περιβάλλον εντολών με προηγμένες λειτουργίες αυτόματης συμπλήρωσης",
         "category": "Terminal",
         "targets": {
+            "unios": "zsh",
             "ubuntu": "zsh",
             "debian": "zsh",
             "arch": "zsh",
@@ -43,6 +44,7 @@
         "description": "Έξυπνο και φιλικό προς τον χρήστη διαδραστικό περιβάλλον εργασίας",
         "category": "Terminal",
         "targets": {
+            "unios": "fish",
             "ubuntu": "fish",
             "debian": "fish",
             "arch": "fish",
@@ -64,6 +66,7 @@
         "description": "Προσαρμόσιμη γραμμή εντολών μεταξύ περιβαλλόντων",
         "category": "Terminal",
         "targets": {
+            "unios": "starship",
             "ubuntu": "starship",
             "debian": "starship",
             "arch": "starship",
@@ -85,6 +88,7 @@
         "description": "Εξαιρετικά γρήγορος εξομοιωτής τερματικού με επιτάχυνση GPU",
         "category": "Terminal",
         "targets": {
+            "unios": "alacritty",
             "ubuntu": "alacritty",
             "debian": "alacritty",
             "arch": "alacritty",
@@ -108,6 +112,7 @@
         "description": "Γρήγορο τερματικό με βάση GPU και προηγμένες λειτουργίες",
         "category": "Terminal",
         "targets": {
+            "unios": "kitty",
             "ubuntu": "kitty",
             "debian": "kitty",
             "arch": "kitty",
@@ -130,6 +135,7 @@
         "description": "Τερματικό με επιτάχυνση GPU και διαμόρφωση Lua",
         "category": "Terminal",
         "targets": {
+            "unios": "wezterm",
             "arch": "wezterm",
             "opensuse": "wezterm",
             "nix": "wezterm",
@@ -150,6 +156,7 @@
         "description": "Ελαφρύς εξομοιωτής τερματικού με εγγενή υποστήριξη Wayland",
         "category": "Terminal",
         "targets": {
+            "unios": "foot",
             "ubuntu": "foot",
             "debian": "foot",
             "arch": "foot",
@@ -172,6 +179,7 @@
         "description": "Εγγενές τερματικό με επιτάχυνση GPU από τον Mitchell Hashimoto",
         "category": "Terminal",
         "targets": {
+            "unios": "ghostty",
             "arch": "ghostty",
             "nix": "ghostty",
             "homebrew": "--cask ghostty"
@@ -190,6 +198,7 @@
         "description": "Σύγχρονος εξομοιωτής τερματικού, βελτιστοποιημένος για ροές εργασίας με χρήση κοντέινερ",
         "category": "Terminal",
         "targets": {
+            "unios": "ptyxis",
             "debian": "ptyxis",
             "ubuntu": "ptyxis",
             "arch": "ptyxis",

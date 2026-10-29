@@ -5,6 +5,7 @@
         "description": "Αποκεντρωμένος συγχρονισμός αρχείων από ομότιμο σε ομότιμο",
         "category": "File Sharing",
         "targets": {
+            "unios": "syncthing",
             "ubuntu": "syncthing",
             "debian": "syncthing",
             "arch": "syncthing",
@@ -28,6 +29,7 @@
         "description": "Πρόγραμμα-πελάτης BitTorrent ανοιχτού κώδικα, εναλλακτική λύση του uTorrent",
         "category": "File Sharing",
         "targets": {
+            "unios": "qbittorrent",
             "ubuntu": "qbittorrent",
             "debian": "qbittorrent",
             "arch": "qbittorrent",
@@ -51,6 +53,7 @@
         "description": "Ελαφρύς πελάτης BitTorrent",
         "category": "File Sharing",
         "targets": {
+            "unios": "transmission-gtk",
             "ubuntu": "transmission",
             "debian": "transmission",
             "arch": "transmission-gtk",
@@ -74,6 +77,7 @@
         "description": "Εναλλακτική λύση AirDrop για όλες τις πλατφόρμες, για τοπική κοινή χρήση",
         "category": "File Sharing",
         "targets": {
+            "unios": "localsend-bin",
             "arch": "localsend-bin",
             "nix": "localsend",
             "flatpak": "org.localsend.localsend_app",
@@ -93,6 +97,7 @@
         "description": "Πολυπλατφορμικός πελάτης FTP, FTPS και SFTP",
         "category": "File Sharing",
         "targets": {
+            "unios": "filezilla",
             "ubuntu": "filezilla",
             "debian": "filezilla",
             "arch": "filezilla",
@@ -115,6 +120,7 @@
         "description": "Τοπικό πρόγραμμα-πελάτης συγχρονισμού για αποθήκευση στο cloud",
         "category": "File Sharing",
         "targets": {
+            "unios": "nextcloud-client",
             "ubuntu": "nextcloud-desktop",
             "debian": "nextcloud-desktop",
             "arch": "nextcloud-client",
@@ -138,6 +144,7 @@
         "description": "Δημοφιλής υπηρεσία αποθήκευσης και συγχρονισμού αρχείων στο cloud",
         "category": "File Sharing",
         "targets": {
+            "unios": "dropbox",
             "arch": "dropbox",
             "nix": "dropbox",
             "flatpak": "com.dropbox.Client",
@@ -157,6 +164,7 @@
         "description": "Σύγχρονος διαχειριστής λήψεων με ενσωμάτωση στον περιηγητή",
         "category": "File Sharing",
         "targets": {
+            "unios": "ab-download-manager-bin",
             "arch": "ab-download-manager-bin"
         },
         "unavailableReason": "Διατίθεται μόνο μέσω [AUR](https://aur.archlinux.org/packages/ab-download-manager-bin). Λήψη από [abdownloadmanager.com](https://abdownloadmanager.com/).",
@@ -173,6 +181,7 @@
         "description": "Πλούσιος σε λειτουργίες διαχειριστής λήψεων με υποστήριξη BitTorrent",
         "category": "File Sharing",
         "targets": {
+            "unios": "freedownloadmanager-bin",
             "arch": "freedownloadmanager-bin",
             "homebrew": "--cask free-download-manager",
             "flatpak": "org.freedownloadmanager.Manager"

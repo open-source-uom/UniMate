@@ -29,6 +29,7 @@ interface CategorySectionProps {
 }
 
 const categoryColors: Record<Category, string> = {
+    'UniOS Tools': 'violet',
     'Web Browsers': 'orange',
     'Communication': 'blue',
     'Media': 'yellow',

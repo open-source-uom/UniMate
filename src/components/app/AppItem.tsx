@@ -22,6 +22,7 @@ const COLOR_MAP: Record<string, string> = {
     'teal': '#14b8a6',
     'gray': '#6b7280',
     'fuchsia': '#d946ef',
+    'violet': '#c48cb6'
 };
 
 interface AppItemProps {
@@ -65,7 +66,15 @@ export const AppItem = memo(function AppItem({
         return msg;
     };
 
-    const isAur = selectedDistro === 'arch' && app.targets?.arch && isAurPackage(app.targets.arch);
+    //make isAur true AND when Unios Distro is chosen
+    let isAur = false;
+    if(selectedDistro === 'arch' && app.targets?.arch && isAurPackage(app.targets.arch)){
+        isAur = true;
+    }
+    if(selectedDistro === 'unios' && app.targets?.unios && isAurPackage(app.targets.unios)){
+        isAur = true;
+    }
+    
     const universalTarget = !app.targets?.[selectedDistro] ? (
         app.targets?.npm ? 'npm' :
         app.targets?.script ? 'script' : null

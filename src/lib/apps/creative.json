@@ -5,6 +5,7 @@
         "description": "Επαγγελματικού επιπέδου σουίτα δημιουργίας 3D μοντέλων",
         "category": "Creative",
         "targets": {
+            "unios": "blender",
             "ubuntu": "blender",
             "debian": "blender",
             "arch": "blender",
@@ -28,6 +29,7 @@
         "description": "Ισχυρό δωρεάν πρόγραμμα επεξεργασίας εικόνων, εναλλακτική λύση του Photoshop",
         "category": "Creative",
         "targets": {
+            "unios": "gimp",
             "ubuntu": "gimp",
             "debian": "gimp",
             "arch": "gimp",
@@ -51,6 +53,7 @@
         "description": "Επαγγελματικό πρόγραμμα επεξεργασίας διανυσματικών γραφικών",
         "category": "Creative",
         "targets": {
+            "unios": "inkscape",
             "ubuntu": "inkscape",
             "debian": "inkscape",
             "arch": "inkscape",
@@ -72,6 +75,7 @@
         "description": "Επαγγελματική εφαρμογή ψηφιακής ζωγραφικής",
         "category": "Creative",
         "targets": {
+            "unios": "krita",
             "ubuntu": "krita",
             "debian": "krita",
             "arch": "krita",
@@ -95,6 +99,7 @@
         "description": "Εφαρμογή για τη διαχείριση της ροής εργασιών στην επαγγελματική φωτογραφία",
         "category": "Creative",
         "targets": {
+            "unios": "darktable",
             "ubuntu": "darktable",
             "debian": "darktable",
             "arch": "darktable",
@@ -116,6 +121,7 @@
         "description": "Παραμετρικό πρόγραμμα μοντελοποίησης 3D CAD ανοιχτού κώδικα",
         "category": "Creative",
         "targets": {
+            "unios": "freecad",
             "ubuntu": "freecad",
             "debian": "freecad",
             "arch": "freecad",
@@ -139,6 +145,7 @@
         "description": "Επαγγελματική σουίτα σχεδιασμού πλακετών τυπωμένων κυκλωμάτων και σχηματικών διαγραμμάτων",
         "category": "Creative",
         "targets": {
+            "unios": "kicad",
             "ubuntu": "kicad",
             "debian": "kicad",
             "arch": "kicad",
@@ -162,6 +169,7 @@
         "description": "Δημοφιλής εφαρμογή τεμαχισμού για 3D εκτυπωτές",
         "category": "Creative",
         "targets": {
+            "unios": "cura",
             "arch": "cura",
             "fedora": "cura",
             "opensuse": "cura",
@@ -182,6 +190,7 @@
         "description": "Πολυλειτουργικός, διαπλατφορμικός κινητήρας παιχνιδιών",
         "category": "Creative",
         "targets": {
+            "unios": "godot",
             "ubuntu": "godot",
             "debian": "godot",
             "arch": "godot",
@@ -205,6 +214,7 @@
         "description": "Ένα εύχρηστο πρόγραμμα ζωγραφικής από το KDE",
         "category": "Creative",
         "targets": {
+            "unios": "kolourpaint",
             "ubuntu": "kolourpaint",
             "debian": "kolourpaint",
             "arch": "kolourpaint",
@@ -225,6 +235,7 @@
         "description": "Προηγμένο πρόγραμμα τεμαχισμού για 3D εκτυπωτές βασισμένο στο BambuStudio",
         "category": "Creative",
         "targets": {
+            "unios": "orca-slicer-bin",
             "arch": "orca-slicer-bin",
             "nix": "orca-slicer",
             "homebrew": "--cask orcaslicer"

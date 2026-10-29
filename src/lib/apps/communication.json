@@ -5,6 +5,7 @@
         "description": "Δημοφιλής πλατφόρμα συνομιλίας με φωνή, βίντεο και κείμενο",
         "category": "Communication",
         "targets": {
+            "unios": "discord",
             "arch": "discord",
             "opensuse": "discord",
             "nix": "discord",
@@ -26,6 +27,7 @@
         "description": "Εφαρμογή Discord με ενσωματομένα Vencord mods built-in",
         "category": "Communication",
         "targets": {
+            "unios": "vesktop-bin",
             "arch": "vesktop-bin",
             "nix": "vesktop",
             "flatpak": "dev.vencord.Vesktop",
@@ -43,6 +45,7 @@
         "description": "Open-source Discord alternative",
         "category": "Communication",
         "targets": {
+            "unios": "stoat-desktop-bin",
             "arch": "stoat-desktop-bin",
             "snap": "stoat-tsugu"
         },
@@ -58,6 +61,7 @@
         "description": "Γρήγορη ανταλλαγή μηνυμάτων μέσω cloud με δυνατότητα κοινής χρήσης αρχείων",
         "category": "Communication",
         "targets": {
+            "unios": "telegram-desktop",
             "arch": "telegram-desktop",
             "opensuse": "telegram-desktop",
             "nix": "telegram-desktop",
@@ -79,6 +83,7 @@
         "description": "Εφαρμογή ανταλλαγής μηνυμάτων με ασφαλή κρυπτογράφηση από άκρο σε άκρο",
         "category": "Communication",
         "targets": {
+            "unios": "signal-desktop",
             "arch": "signal-desktop",
             "opensuse": "signal-desktop",
             "nix": "signal-desktop",
@@ -100,6 +105,7 @@
         "description": "Ομαδική συνεργασία και εταιρική ανταλλαγή μηνυμάτων",
         "category": "Communication",
         "targets": {
+            "unios": "slack-desktop",
             "arch": "slack-desktop",
             "nix": "slack",
             "flatpak": "com.slack.Slack",
@@ -120,6 +126,7 @@
         "description": "Δημοφιλείς υπηρεσίες τηλεδιάσκεψης και συναντήσεων",
         "category": "Communication",
         "targets": {
+            "unios": "zoom",
             "arch": "zoom",
             "nix": "zoom-us",
             "flatpak": "us.zoom.Zoom",
@@ -140,6 +147,7 @@
         "description": "Δωρεάν πρόγραμμα ηλεκτρονικού ταχυδρομείου από τη Mozilla με ημερολόγιο",
         "category": "Communication",
         "targets": {
+            "unios": "thunderbird",
             "ubuntu": "thunderbird",
             "debian": "thunderbird",
             "arch": "thunderbird",
@@ -163,6 +171,7 @@
         "description": "Αποκεντρωμένος πελάτης συνομιλίας Matrix με κρυπτογράφηση από άκρο σε άκρο",
         "category": "Communication",
         "targets": {
+            "unios": "element-desktop",
             "arch": "element-desktop",
             "opensuse": "element-desktop",
             "nix": "element-desktop",
@@ -184,6 +193,7 @@
     "description": "Εγγενής πελάτης Matrix υψηλής απόδοσης, κατασκευασμένος με C++/Qt, που δίνει προτεραιότητα στον συγχρονισμό χαμηλής καθυστέρησης.",
     "category": "Communication",
     "targets": {
+      "unios": "nheko",
       "ubuntu": "nheko",
       "debian": "nheko",
       "arch": "nheko",
@@ -205,6 +215,7 @@
     "description": "Ένας εξελιγμένος πελάτης Matrix που εστιάζει αποκλειστικά στην εμπειρία του χρήστη",
     "category": "Communication",
     "targets": {
+      "unios": "cinny-desktop-bin",
       "arch": "cinny-desktop-bin",
       "nix": "cinny-desktop",
       "flatpak": "in.cinny.Cinny"
@@ -221,6 +232,7 @@
     "description": "Πελάτης Matrix που χρησιμοποιεί το Material Design",
     "category": "Communication",
     "targets": {
+      "unios": "fluffychat-bin",
       "arch": "fluffychat-bin",
       "nix": "fluffychat",
       "flatpak": "im.fluffychat.Fluffychat",
@@ -238,6 +250,7 @@
     "description": "Ένα κομψό πρόγραμμα-πελάτης IRC γραμμένο σε Rust",
     "category": "Communication",
     "targets": {
+      "unios": "halloy",
       "arch": "halloy",
       "opensuse": "halloy",
       "nix": "halloy",
@@ -257,6 +270,7 @@
     "description": "Πρόγραμμα-πελάτης XMPP βασισμένο στο GTK για το GNOME",
     "category": "Communication",
     "targets": {
+      "unios": "dino",
       "ubuntu": "dino-im",
       "debian": "dino-im",
       "arch": "dino",

@@ -5,6 +5,7 @@
         "description": "Private VPN with no-logging policy",
         "category": "VPN & Network",
         "targets": {
+            "unios": "ivpn-ui",
             "arch": "ivpn-ui",
             "nix": "ivpn-ui",
             "homebrew": "--cask ivpn",
@@ -23,6 +24,7 @@
         "description": "Ασφαλές VPN από τους δημιουργούς του ProtonMail",
         "category": "VPN & Network",
         "targets": {
+            "unios": "proton-vpn-gtk-app",
             "arch": "proton-vpn-gtk-app",
             "nix": "protonvpn-gui",
             "flatpak": "com.protonvpn.www",
@@ -42,6 +44,7 @@
         "description": "VPN με έμφαση στην προστασία της ιδιωτικότητας και πολιτική μη τήρησης αρχείων καταγραφής",
         "category": "VPN & Network",
         "targets": {
+            "unios": "mullvad-vpn-bin",
             "arch": "mullvad-vpn-bin",
             "nix": "mullvad-vpn",
             "homebrew": "--cask mullvad-vpn"
@@ -60,6 +63,7 @@
         "description": "VPN πλέγματος χωρίς διαμόρφωση με χρήση του WireGuard",
         "category": "VPN & Network",
         "targets": {
+            "unios": "tailscale",
             "arch": "tailscale",
             "fedora": "tailscale",
             "opensuse": "tailscale",
@@ -80,6 +84,7 @@
         "description": "Γρήγορο, σύγχρονο και ασφαλές πρωτόκολλο σήραγγας VPN",
         "category": "VPN & Network",
         "targets": {
+            "unios": "wireguard-tools",
             "ubuntu": "wireguard",
             "debian": "wireguard",
             "arch": "wireguard-tools",
@@ -102,6 +107,7 @@
         "description": "Ολοκληρωμένη λύση SSL VPN",
         "category": "VPN & Network",
         "targets": {
+            "unios": "openvpn",
             "ubuntu": "openvpn",
             "debian": "openvpn",
             "arch": "openvpn",
@@ -124,6 +130,7 @@
         "description": "Εργαλείο ανίχνευσης δικτύου και ελέγχου ασφάλειας",
         "category": "VPN & Network",
         "targets": {
+            "unios": "nmap",
             "ubuntu": "nmap",
             "debian": "nmap",
             "arch": "nmap",
@@ -144,6 +151,7 @@
         "description": "Ασφαλής απομακρυσμένη σύνδεση και μεταφορά αρχείων μέσω SSH",
         "category": "VPN & Network",
         "targets": {
+            "unios": "openssh",
             "ubuntu": "openssh-client",
             "debian": "openssh-client",
             "arch": "openssh",
@@ -166,6 +174,7 @@
         "description": "Πρόγραμμα-πελάτης ανοιχτού κώδικα για απομακρυσμένη πρόσβαση σε επιτραπέζιους υπολογιστές μέσω RDP, VNC, SSH και άλλων πρωτοκόλλων",
         "category": "VPN & Network",
         "targets": {
+            "unios": "remmina",
             "ubuntu": "remmina",
             "debian": "remmina",
             "arch": "remmina",

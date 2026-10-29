@@ -5,6 +5,7 @@
     "description": "Ένας ανοιχτού κώδικα περιηγητής της Mozilla με έμφαση στην προστασία της ιδιωτικότητας",
     "category": "Web Browsers",
     "targets": {
+      "unios": "firefox",
       "ubuntu": "firefox",
       "debian": "firefox-esr",
       "arch": "firefox",
@@ -28,6 +29,7 @@
     "description": "Πρόγραμμα περιήγησης ανοιχτού κώδικα στο οποίο βασίζεται το Google Chrome",
     "category": "Web Browsers",
     "targets": {
+      "unios": "chromium",
       "ubuntu": "chromium-browser",
       "debian": "chromium",
       "arch": "chromium",
@@ -49,6 +51,7 @@
     "description": "Πρόγραμμα περιήγησης με έμφαση στην προστασία της ιδιωτικότητας και ενσωματωμένο πρόγραμμα αποκλεισμού διαφημίσεων και ιχνηλατών",
     "category": "Web Browsers",
     "targets": {
+      "unios": "brave-bin",
       "arch": "brave-bin",
       "opensuse": "brave-browser",
       "nix": "brave",
@@ -70,6 +73,7 @@
     "description": "Παράλληλη έκδοση του Firefox με ενισχυμένη προστασία της ιδιωτικότητας και χωρίς λειτουργίες τηλεμετρίας",
     "category": "Web Browsers",
     "targets": {
+      "unios": "librewolf-bin",
       "arch": "librewolf-bin",
       "opensuse": "librewolf",
       "nix": "librewolf",
@@ -90,6 +94,7 @@
     "description": "Ανώνυμη περιήγηση μέσω του δικτύου Tor",
     "category": "Web Browsers",
     "targets": {
+      "unios": "torbrowser-launcher",
       "ubuntu": "torbrowser-launcher",
       "arch": "torbrowser-launcher",
       "fedora": "torbrowser-launcher",
@@ -112,6 +117,7 @@
     "description": "Ο πιο δημοφιλής περιηγητής ιστού από την Google",
     "category": "Web Browsers",
     "targets": {
+      "unios": "google-chrome",
       "arch": "google-chrome",
       "opensuse": "google-chrome-stable",
       "nix": "google-chrome",
@@ -131,6 +137,7 @@
     "description": "Παράλληλη έκδοση του Firefox με έμφαση στην προστασία της ιδιωτικότητας",
     "category": "Web Browsers",
     "targets": {
+      "unios": "zen-browser-bin",
       "arch": "zen-browser-bin",
       "flatpak": "app.zen_browser.zen",
       "homebrew": "--cask zen"
@@ -149,6 +156,7 @@
     "description": "Πρόγραμμα περιήγησης βασισμένο στο Chromium, με έμφαση στην προστασία της ιδιωτικότητας, ξεγκουγκλαρισμένο",
     "category": "Web Browsers",
     "targets": {
+      "unios": "helium-browser-bin",
       "arch": "helium-browser-bin",
       "homebrew": "--cask helium"
     },
@@ -166,6 +174,7 @@
     "description": "Ένας εξαιρετικά προσαρμόσιμος περιηγητής για προχωρημένους χρήστες",
     "category": "Web Browsers",
     "targets": {
+      "unios": "vivaldi",
       "arch": "vivaldi",
       "nix": "vivaldi",
       "flatpak": "com.vivaldi.Vivaldi",
@@ -186,6 +195,7 @@
     "description": "Μια εκδοχή του Chromium με έμφαση στην προστασία της ιδιωτικότητας, από την οποία έχουν αφαιρεθεί οι υπηρεσίες της Google και τα στοιχεία τηλεμετρίας.",
     "category": "Web Browsers",
     "targets": {
+      "unios": "ungoogled-chromium-bin",
       "arch": "ungoogled-chromium-bin",
       "flatpak": "io.github.ungoogled_software.ungoogled_chromium",
       "homebrew": "--cask ungoogled-chromium",
@@ -203,6 +213,7 @@
     "description": "An open source browser with integrated file manager by the KDE project",
     "category": "Web Browsers",
     "targets": {
+      "unios": "konqueror",
       "ubuntu": "konqueror",
       "debian": "konqueror",
       "arch": "konqueror",
@@ -223,6 +234,7 @@
     "description": "A lightweight browser by the KDE project",
     "category": "Web Browsers",
     "targets": {
+      "unios": "falkon",
       "ubuntu": "falkon",
       "debian": "falkon",
       "arch": "falkon",
@@ -244,6 +256,7 @@
     "description": "A lightweight browser by the GNOME project",
     "category": "Web Browsers",
     "targets": {
+      "unios": "epiphany",
       "ubuntu": "epiphany-browser",
       "debian": "epiphany-browser",
       "arch": "epiphany",
@@ -265,6 +278,7 @@
     "description": "A lightweight keyboard-focused browser.",
     "category": "Web Browsers",
     "targets": {
+      "unios": "qutebrowser",
       "ubuntu": "qutebrowser",
       "debian": "qutebrowser",
       "arch": "qutebrowser",
@@ -284,6 +298,7 @@
     "description": "A keyboard-centric browser for power users.",
     "category": "Web Browsers",
     "targets": {
+      "unios": "nyxt",
       "arch": "nyxt",
       "flatpak": "engineer.atlas.Nyxt",
       "nix": "nyxt",
@@ -300,6 +315,7 @@
     "description": "Μια έκδοση του Firefox με πολλές δυνατότητες προσαρμογής.",
     "category": "Web Browsers",
     "targets": {
+      "unios": "floorp-bin",
       "arch": "floorp-bin",
       "flatpak": "one.ablaze.floorp",
       "homebrew": "--cask floorp",
@@ -319,6 +335,7 @@
     "description": "Ένας περιηγητής με έμφαση στην προστασία της ιδιωτικότητας, που δημιουργήθηκε σε συνεργασία με το Tor Project. ",
     "category": "Web Browsers",
     "targets": {
+      "unios": "mullvad-browser-bin",
       "arch": "mullvad-browser-bin",
       "flatpak": "net.mullvad.MullvadBrowser",
       "homebrew": "--cask mullvad-browser",
@@ -336,6 +353,7 @@
     "description": "Ιδιόκτητος περιηγητής ιστού της Microsoft",
     "category": "Web Browsers",
     "targets": {
+      "unios": "microsoft-edge-stable-bin",
       "arch": "microsoft-edge-stable-bin",
       "nix": "microsoft-edge",
       "homebrew": "--cask microsoft-edge",
@@ -354,6 +372,7 @@
     "description": "Ιδιόκτητος περιηγητής βασισμένος στον Chromium, γνωστός για τον πληθώρα λειτουργιών και το πλεονάζον μέγεθός του.",
     "category": "Web Browsers",
     "targets": {
+      "unios": "opera",
       "arch": "opera",
       "homebrew": "--cask opera",
       "flatpak": "com.opera.Opera",

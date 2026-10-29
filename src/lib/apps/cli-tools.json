@@ -5,6 +5,7 @@
         "description": "Κομψός παρακολούθητής πόρων τερματικού με γραφήματα",
         "category": "CLI Tools",
         "targets": {
+            "unios": "btop",
             "ubuntu": "btop",
             "debian": "btop",
             "arch": "btop",
@@ -27,6 +28,7 @@
         "description": "Διαδραστικό πρόγραμμα προβολής διεργασιών και παρακολούθησης συστήματος",
         "category": "CLI Tools",
         "targets": {
+            "unios": "htop",
             "ubuntu": "htop",
             "debian": "htop",
             "arch": "htop",
@@ -50,6 +52,7 @@
         "description": "Γρήγορο εργαλείο πληροφοριών συστήματος τύπου neofetch",
         "category": "CLI Tools",
         "targets": {
+            "unios": "fastfetch",
             "ubuntu": "fastfetch",
             "debian": "fastfetch",
             "fedora": "fastfetch",
@@ -72,6 +75,7 @@
         "description": "Σύγχρονη αντικατάσταση του ls με χρώματα και εικονίδια",
         "category": "CLI Tools",
         "targets": {
+            "unios": "eza",
             "ubuntu": "eza",
             "debian": "eza",
             "arch": "eza",
@@ -93,6 +97,7 @@
         "description": "Κλώνος του Cat με επισήμανση σύνταξης και ενσωμάτωση του Git",
         "category": "CLI Tools",
         "targets": {
+            "unios": "bat",
             "ubuntu": "bat",
             "debian": "bat",
             "arch": "bat",
@@ -115,6 +120,7 @@
         "description": "Εξαιρετικά γρήγορος μηχανισμός αναζήτησης με ασαφή κριτήρια από τη γραμμή εντολών",
         "category": "CLI Tools",
         "targets": {
+            "unios": "fzf",
             "ubuntu": "fzf",
             "debian": "fzf",
             "arch": "fzf",
@@ -137,6 +143,7 @@
         "description": "Εξαιρετικά γρήγορη αναδρομική αναζήτηση που λαμβάνει υπόψη το αρχείο .gitignore",
         "category": "CLI Tools",
         "targets": {
+            "unios": "ripgrep",
             "ubuntu": "ripgrep",
             "debian": "ripgrep",
             "arch": "ripgrep",
@@ -159,6 +166,7 @@
         "description": "Έξυπνο CD που μαθαίνει τις συνήθειές σας",
         "category": "CLI Tools",
         "targets": {
+            "unios": "zoxide",
             "ubuntu": "zoxide",
             "debian": "zoxide",
             "arch": "zoxide",
@@ -181,6 +189,7 @@
         "description": "Απλοποιημένες σελίδες οδηγιών με τη συμβολή της κοινότητας",
         "category": "CLI Tools",
         "targets": {
+            "unios": "tldr",
             "arch": "tldr",
             "fedora": "tldr",
             "nix": "tldr",
@@ -200,6 +209,7 @@
         "description": "Πρόγραμμα λήψης αρχείων μέσω γραμμής εντολών για HTTP/FTP",
         "category": "CLI Tools",
         "targets": {
+            "unios": "wget",
             "ubuntu": "wget",
             "debian": "wget",
             "arch": "wget",
@@ -222,6 +232,7 @@
         "description": "Εργαλείο γραμμής εντολών για τη μεταφορά δεδομένων μέσω URL",
         "category": "CLI Tools",
         "targets": {
+            "unios": "curl",
             "ubuntu": "curl",
             "debian": "curl",
             "arch": "curl",
@@ -244,6 +255,7 @@
         "description": "Επιταχυντής λήψεων πολλαπλών πρωτοκόλλων και πηγών",
         "category": "CLI Tools",
         "targets": {
+            "unios": "aria2",
             "ubuntu": "aria2",
             "debian": "aria2",
             "arch": "aria2",
@@ -266,6 +278,7 @@
         "description": "Εξαιρετικά γρήγορος διαχειριστής αρχείων τερματικού γραμμένος σε Rust",
         "category": "CLI Tools",
         "targets": {
+            "unios": "yazi",
             "arch": "yazi",
             "opensuse": "yazi",
             "nix": "yazi",
@@ -285,6 +298,7 @@
         "description": "Διαχειριστής αρχείων τερματικού εμπνευσμένος από το Vim με δυνατότητα προεπισκόπησης",
         "category": "CLI Tools",
         "targets": {
+            "unios": "ranger",
             "ubuntu": "ranger",
             "debian": "ranger",
             "arch": "ranger",
@@ -307,6 +321,7 @@
         "description": "Αναλυτής χρήσης δίσκου βασισμένος στο NCurses",
         "category": "CLI Tools",
         "targets": {
+            "unios": "ncdu",
             "ubuntu": "ncdu",
             "debian": "ncdu",
             "arch": "ncdu",
@@ -329,6 +344,7 @@
         "description": "Μια απλή και γρήγορη εναλλακτική λύση για την εντολή «find»",
         "category": "CLI Tools",
         "targets": {
+            "unios": "fd",
             "ubuntu": "fd-find",
             "debian": "fd-find",
             "arch": "fd",
@@ -351,6 +367,7 @@
         "description": "Διαχειριστής συνεδριών τερματικού και πολυπλέκτης",
         "category": "CLI Tools",
         "targets": {
+            "unios": "tmux",
             "ubuntu": "tmux",
             "debian": "tmux",
             "arch": "tmux",
@@ -373,6 +390,7 @@
         "description": "Σύγχρονος πολυπλέκτης τερματικών με σύστημα διάταξης",
         "category": "CLI Tools",
         "targets": {
+            "unios": "zellij",
             "ubuntu": "zellij",
             "arch": "zellij",
             "fedora": "zellij",
@@ -394,6 +412,7 @@
         "description": "Σύγχρονος διαχειριστής αρχείων τερματικού με TUI",
         "category": "CLI Tools",
         "targets": {
+            "unios": "superfile",
             "arch": "superfile",
             "nix": "superfile",
             "homebrew": "superfile"
@@ -412,6 +431,7 @@
         "description": "Εργαλείο γρήγορης σταδιακής μεταφοράς και συγχρονισμού αρχείων",
         "category": "CLI Tools",
         "targets": {
+            "unios": "rsync",
             "ubuntu": "rsync",
             "debian": "rsync",
             "arch": "rsync",

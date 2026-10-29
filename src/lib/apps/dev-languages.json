@@ -5,6 +5,7 @@
         "description": "Δημοφιλής γλώσσα προγραμματισμού κατάλληλη για αρχάριους",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "python",
             "ubuntu": "python3",
             "debian": "python3",
             "arch": "python",
@@ -27,6 +28,7 @@
         "description": "Περιβάλλον εκτέλεσης JavaScript από την πλευρά του διακομιστή",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "nodejs",
             "ubuntu": "nodejs",
             "debian": "nodejs",
             "arch": "nodejs",
@@ -50,6 +52,7 @@
         "description": "Γρήγορη γλώσσα προγραμματισμού από την Google",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "go",
             "ubuntu": "golang",
             "debian": "golang",
             "arch": "go",
@@ -73,6 +76,7 @@
         "description": "Γλώσσα προγραμματισμού συστημάτων με ασφάλεια μνήμης",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "rustup",
             "arch": "rustup",
             "fedora": "rustup",
             "opensuse": "rustup",
@@ -94,6 +98,7 @@
         "description": "Δυναμική γλώσσα γνωστή για την κομψή σύνταξή της",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "ruby",
             "ubuntu": "ruby",
             "debian": "ruby",
             "arch": "ruby",
@@ -117,6 +122,7 @@
         "description": "Δημοφιλής γλώσσα προγραμματισμού από την πλευρά του διακομιστή",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "php",
             "ubuntu": "php",
             "debian": "php",
             "arch": "php",
@@ -139,6 +145,7 @@
         "description": "Κιτ ανάπτυξης Java ανοιχτού κώδικα",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "jdk-openjdk",
             "ubuntu": "openjdk-21-jdk",
             "debian": "openjdk-17-jdk",
             "arch": "jdk-openjdk",
@@ -161,6 +168,7 @@
         "description": "Ασφαλές περιβάλλον εκτέλεσης TypeScript/JavaScript από τον δημιουργό του Node",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "deno",
             "arch": "deno",
             "opensuse": "deno",
             "nix": "deno",
@@ -180,6 +188,7 @@
         "description": "Εξαιρετικά γρήγορο περιβάλλον εκτέλεσης και εργαλείο συσκευασίας JavaScript",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "bun",
             "arch": "bun",
             "nix": "bun",
             "homebrew": "bun"
@@ -197,6 +206,7 @@
         "description": "Διαχειριστής πακέτων JavaScript",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "npm",
             "ubuntu": "npm",
             "debian": "npm",
             "arch": "npm",
@@ -219,6 +229,7 @@
         "description": "Γρήγορος διαχειριστής πακέτων που αξιοποιεί αποτελεσματικά τον χώρο στο δίσκο",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "pnpm",
             "arch": "pnpm",
             "fedora": "pnpm",
             "opensuse": "pnpm",
@@ -238,6 +249,7 @@
         "description": "Διαχειριστής πακέτων JavaScript",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "yarn",
             "ubuntu": "yarnpkg",
             "debian": "yarnpkg",
             "arch": "yarn",
@@ -259,6 +271,7 @@
         "description": "Γρήγορος διαχειριστής πακέτων Python",
         "category": "Dev: Languages",
         "targets": {
+            "unios": "uv",
             "arch": "uv",
             "nix": "uv",
             "homebrew": "uv"

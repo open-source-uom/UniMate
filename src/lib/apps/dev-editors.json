@@ -5,6 +5,7 @@
     "description": "AI-powered code editor based on VS Code",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "cursor-bin",
       "arch": "cursor-bin",
       "nix": "code-cursor",
       "homebrew": "--cask cursor"
@@ -23,6 +24,7 @@
     "description": "Most popular extensible code editor by Microsoft",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "code",
       "arch": "code",
       "nix": "vscode",
       "flatpak": "com.visualstudio.code",
@@ -42,6 +44,7 @@
     "description": "VS Code που έχει δημιουργηθεί από την κοινότητα χωρίς τηλεμετρία της Microsoft",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "vscodium-bin",
       "arch": "vscodium-bin",
       "nix": "vscodium",
       "flatpak": "com.vscodium.codium",
@@ -62,6 +65,7 @@
     "description": "High-performance editor with real-time collaboration",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "zed",
       "arch": "zed",
       "nix": "zed-editor",
       "flatpak": "dev.zed.Zed",
@@ -81,6 +85,7 @@
     "description": "IDE for Java and Kotlin developers by Jetbrains",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "intellij-idea-ultimate-edition",
       "arch": "intellij-idea-ultimate-edition",
       "nix": "jetbrains.idea",
       "flatpak": "com.jetbrains.IntelliJ-IDEA-Ultimate",
@@ -100,6 +105,7 @@
     "description": "IDE for Python developers and Data scientists by Jetbrains",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "pycharm",
       "arch": "pycharm",
       "flatpak": "com.jetbrains.PyCharm-Professional",
       "homebrew": "--cask pycharm",
@@ -119,6 +125,7 @@
     "description": "IDE for C and C++ developers by Jetbrains",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "clion",
       "arch": "clion",
       "flatpak": "com.jetbrains.CLion",
       "homebrew": "--cask clion",
@@ -138,6 +145,7 @@
     "description": "Περιβάλλον ανάπτυξης για την ανάπτυξη μικροελεγκτών Arduino",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "arduino",
       "ubuntu": "arduino",
       "debian": "arduino",
       "arch": "arduino",
@@ -161,6 +169,7 @@
     "description": "Lightning-fast proprietary text editor",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "sublime-text-4",
       "arch": "sublime-text-4",
       "nix": "sublime",
       "flatpak": "com.sublimetext.three",
@@ -181,6 +190,7 @@
     "description": "Πλούσιος σε λειτουργίες επεξεργαστής κώδικα από το KDE με επισήμανση σύνταξης",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "kate",
       "ubuntu": "kate",
       "debian": "kate",
       "arch": "kate",
@@ -204,6 +214,7 @@
     "description": "Fast and lightweight IDE",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "geany",
       "ubuntu": "geany",
       "debian": "geany",
       "arch": "geany",
@@ -225,6 +236,7 @@
     "description": "Modernized Vim with better extensibility",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "neovim",
       "ubuntu": "neovim",
       "debian": "neovim",
       "arch": "neovim",
@@ -248,6 +260,7 @@
     "description": "The classic modal text editor that started it all",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "vim",
       "ubuntu": "vim",
       "debian": "vim",
       "arch": "vim",
@@ -271,6 +284,7 @@
     "description": "Modal editor with LSP and tree-sitter built-in",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "helix",
       "arch": "helix",
       "fedora": "helix",
       "opensuse": "helix",
@@ -293,6 +307,7 @@
     "description": "Easy-to-use terminal text editor like nano",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "micro",
       "arch": "micro",
       "ubuntu": "micro",
       "debian": "micro",
@@ -316,6 +331,7 @@
     "description": "Extensible, customizable, free/libre text editor",
     "category": "Dev: Editors",
     "targets": {
+      "unios": "emacs",
       "ubuntu": "emacs",
       "debian": "emacs",
       "arch": "emacs",

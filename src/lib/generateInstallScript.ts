@@ -5,6 +5,7 @@ import {
     generateUniversalScript,
     generateAsciiHeader,
     generateSharedUtils,
+    generateUniOSScript,
     generateUbuntuScript,
     generateDebianScript,
     generateArchScript,
@@ -38,6 +39,7 @@ export function generateInstallScript(options: GenerateOptions): string {
     let scriptContent = '';
 
     switch (distroId) {
+        case 'unios': scriptContent = injectUniversal(generateUniOSScript(packages, helper)); break;
         case 'ubuntu': scriptContent = injectUniversal(generateUbuntuScript(packages)); break;
         case 'debian': scriptContent = injectUniversal(generateDebianScript(packages)); break;
         case 'arch': scriptContent = injectUniversal(generateArchScript(packages, helper)); break;
@@ -91,6 +93,7 @@ export function generateCommandline(options: GenerateOptions): string {
     const pkgList = packages.map(p => p.pkg).join(' ');
 
     switch (distroId) {
+        case 'unios': return appendScripts(appendExtras(pkgList ? `yay -S --needed --noconfirm ${pkgList}` : ''));
         case 'ubuntu':
         case 'debian': return appendScripts(appendExtras(pkgList ? `sudo apt install -y ${pkgList}` : ''));
         case 'arch': return appendScripts(appendExtras(pkgList ? `yay -S --needed --noconfirm ${pkgList}` : ''));

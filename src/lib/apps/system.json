@@ -5,6 +5,7 @@
         "description": "Επεξεργαστής διαμερισμάτων GNOME για τη διαχείριση δίσκων",
         "category": "System",
         "targets": {
+            "unios": "gparted",
             "ubuntu": "gparted",
             "debian": "gparted",
             "arch": "gparted",
@@ -26,6 +27,7 @@
         "description": "Βοηθητικό πρόγραμμα για τη διαχείριση δίσκων, διαμερισμάτων και συστημάτων αρχείων",
         "category": "System",
         "targets": {
+            "unios": "partitionmanager",
             "ubuntu": "partitionmanager",
             "debian": "partitionmanager",
             "arch": "partitionmanager",
@@ -48,6 +50,7 @@
         "description": "Συνδέστε το κινητό σας με τον επιτραπέζιο υπολογιστή σας με Linux",
         "category": "System",
         "targets": {
+            "unios": "kdeconnect",
             "ubuntu": "kdeconnect",
             "debian": "kdeconnect",
             "arch": "kdeconnect",
@@ -69,6 +72,7 @@
         "description": "Εργαλείο δημιουργίας αντιγράφων ασφαλείας και επαναφοράς συστήματος, όπως το Time Machine",
         "category": "System",
         "targets": {
+            "unios": "timeshift",
             "ubuntu": "timeshift",
             "debian": "timeshift",
             "arch": "timeshift",
@@ -90,6 +94,7 @@
         "description": "Ελευθερώστε χώρο στο δίσκο και διατηρήστε το απόρρητο",
         "category": "System",
         "targets": {
+            "unios": "bleachbit",
             "ubuntu": "bleachbit",
             "debian": "bleachbit",
             "arch": "bleachbit",
@@ -110,6 +115,7 @@
         "description": "Ισχυρό εργαλείο δημιουργίας στιγμιότυπων οθόνης με δυνατότητα προσθήκης σχολίων",
         "category": "System",
         "targets": {
+            "unios": "flameshot",
             "ubuntu": "flameshot",
             "debian": "flameshot",
             "arch": "flameshot",
@@ -131,6 +137,7 @@
         "description": "Προηγμένες ρυθμίσεις και προσαρμογή για το GNOME",
         "category": "System",
         "targets": {
+            "unios": "gnome-tweaks",
             "ubuntu": "gnome-tweaks",
             "debian": "gnome-tweaks",
             "arch": "gnome-tweaks",
@@ -152,6 +159,7 @@
         "description": "Επεξεργαστής ρυθμίσεων χαμηλού επιπέδου για το GNOME",
         "category": "System",
         "targets": {
+            "unios": "dconf-editor",
             "ubuntu": "dconf-editor",
             "debian": "dconf-editor",
             "arch": "dconf-editor",
@@ -173,6 +181,7 @@
         "description": "Πρόγραμμα δημιουργίας αντιγράφων ασφαλείας με απομάκρυνση διπλών αρχείων και συμπίεση",
         "category": "System",
         "targets": {
+            "unios": "borg",
             "ubuntu": "borgbackup",
             "debian": "borgbackup",
             "arch": "borg",
@@ -195,6 +204,7 @@
         "description": "Γρήγορο, ασφαλές και αποτελεσματικό πρόγραμμα δημιουργίας αντιγράφων ασφαλείας",
         "category": "System",
         "targets": {
+            "unios": "restic",
             "ubuntu": "restic",
             "debian": "restic",
             "arch": "restic",
@@ -217,6 +227,7 @@
         "description": "Πλαίσιο συσκευασίας και sandboxing για εφαρμογές γενικής χρήσης",
         "category": "System",
         "targets": {
+            "unios": "flatpak",
             "ubuntu": "flatpak",
             "debian": "flatpak",
             "arch": "flatpak",
@@ -238,6 +249,7 @@
         "description": "Διαδραστική απεικόνιση της χρήσης του δίσκου από το KDE",
         "category": "System",
         "targets": {
+            "unios": "filelight",
             "ubuntu": "filelight",
             "debian": "filelight",
             "arch": "filelight",
@@ -260,6 +272,7 @@
         "description": "Οθόνη υπολογιστή με πολλές δυνατότητες ρύθμισης",
         "category": "System",
         "targets": {
+            "unios": "conky",
             "ubuntu": "conky-all",
             "debian": "conky-all",
             "arch": "conky",
@@ -281,6 +294,7 @@
         "description": "Ένα πρόγραμμα γρήγορης αναζήτησης αρχείων, εμπνευσμένο από το Everything",
         "category": "System",
         "targets": {
+            "unios": "fsearch",
             "ubuntu": "fsearch",
             "debian": "fsearch",
             "arch": "fsearch",
@@ -300,6 +314,7 @@
         "description": "Σύγχρονος ελεγκτής πόρων συστήματος",
         "category": "System",
         "targets": {
+            "unios": "resources",
             "arch": "resources",
             "nix": "resources",
             "flatpak": "net.nokyan.Resources"
@@ -315,6 +330,7 @@
         "description": "Δημιουργία προφίλ και παρακολούθηση συστήματος (εναλλακτική λύση του CPU-Z)",
         "category": "System",
         "targets": {
+            "unios": "cpu-x",
             "ubuntu": "cpu-x",
             "debian": "cpu-x",
             "arch": "cpu-x",
@@ -333,6 +349,7 @@
         "description": "Γρήγορο, σύγχρονο πρόγραμμα παρακολούθησης συστήματος με υποστήριξη GPU",
         "category": "System",
         "targets": {
+            "unios": "mission-center",
             "arch": "mission-center",
             "nix": "mission-center",
             "flatpak": "io.missioncenter.MissionCenter",
@@ -350,6 +367,7 @@
         "description": "Λύση ελεύθερου λογισμικού για τον έλεγχο του φωτισμού RGB που δεν εξαρτάται από το λογισμικό του κατασκευαστή. Υποστηρίζει μεγάλη ποικιλία εξαρτημάτων, περιφερειακών, αξεσουάρ και φωτιστικών RGB από πολλούς διαφορετικούς κατασκευαστές.",
         "category": "System",
         "targets": {
+            "unios": "openrgb",
             "arch": "openrgb",
             "fedora": "openrgb",
             "opensuse": "OpenRGB",

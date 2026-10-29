@@ -1,0 +1,97 @@
+[
+{
+  "id": "unibackpack",                      
+  "name": "UniBackpack",                  
+  "description": "Εργαλείο λήψης λογισμικού για ελληνικά πανεπιστήμια.",  
+  "category": "UniOS Tools",
+  "targets": {
+    "unios": "unibackpack",
+    "arch": "unibackpack"
+        },              
+  "icon": {
+    "type": "url",                           
+    "url": "https://github.com/open-source-uom/UniBackpack/blob/main/resources/icons/unibackpack.png?raw=true"
+  },
+    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+
+},
+{
+  "id": "unidesk",                      
+  "name": "UniDesk",                  
+  "description": "Μια βοηθητική εφαρμογή για το UniOS γραμμένη σε python/qt",  
+  "category": "UniOS Tools",
+  "targets": {
+    "unios": "unidesk",
+    "arch": "unidesk"
+    },              
+  "icon": {                           
+    "type": "url",
+    "url": "https://github.com/open-source-uom/UniOS-landing-page/blob/main/assets/logo/icon1-05.png?raw=true"
+  },
+  "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+},
+{
+  "id": "uninews",                      
+  "name": "UniNews",                  
+  "description": "Εφαρμογή ροής ειδήσεων πανεπιστημίων.",  
+  "category": "UniOS Tools",
+  "targets": {
+    "unios": "uninews",
+    "arch":"uninews"
+        },              
+  "icon": {
+    "type": "url",                           
+    "url": "https://raw.githubusercontent.com/open-source-uom/UniNews/ef489d1d7b05f828f285e4ac5bbf972579f6f10d/packaging/uninews.svg"
+  },
+    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+
+},
+{
+  "id": "unios-update",                      
+  "name": "UniOS Update",                  
+  "description": "Εφαρμογή ενημερώσεων για το UniOS.",  
+  "category": "UniOS Tools",
+  "targets": {
+    "unios": "unios-update",
+    "arch": "unios-update"
+        },              
+  "icon": {
+    "type": "url",                           
+    "url": "https://github.com/open-source-uom/UniOS-landing-page/blob/main/assets/logo/unios_update.png?raw=true"
+  },
+    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+
+},
+{
+  "id": "unios-desktop-settings",                      
+  "name": "UniOS Desktop Settings",                  
+  "description": "Εφαρμογή που δίνει στο UniOS την πρωταρχική του εμφάνιση.",  
+  "category": "UniOS Tools",
+  "targets": {
+    "unios": "unios-desktop-settings",
+    "arch": "unios-desktop-settings"
+        },              
+  "icon": {
+    "type": "url",                           
+    "url": "https://github.com/open-source-uom/unios-desktop-settings/blob/main/resources/logos/unios.png?raw=true"
+  },
+    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+
+},
+{
+  "id": "unios-keyring",                      
+  "name": "UniOS Keyring",                  
+  "description": "Εφαρμογή που δίνει πρόσβαση στο αποθετήριο πακέτων του UniOS.",  
+  "category": "UniOS Tools",
+  "targets": {
+    "unios": "unios-keyring",
+    "arch": "unios-keyring"
+        },              
+  "icon": {
+    "type": "url",                           
+    "url": "https://github.com/open-source-uom/unios-desktop-settings/blob/main/resources/logos/unios.png?raw=true"
+  },
+    "unavailableReason": "Δεν περιλαμβάνεται στα επίσημα αποθετήρια."
+
+}
+]

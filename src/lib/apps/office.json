@@ -5,6 +5,7 @@
         "description": "Πλήρης σουίτα γραφείου ανοιχτού κώδικα",
         "category": "Office",
         "targets": {
+            "unios": "libreoffice-fresh",
             "ubuntu": "libreoffice",
             "debian": "libreoffice",
             "arch": "libreoffice-fresh",
@@ -28,6 +29,7 @@
         "description": "Σύγχρονη σουίτα γραφείου με συμβατότητα με το MS Office",
         "category": "Office",
         "targets": {
+            "unios": "onlyoffice-bin",
             "arch": "onlyoffice-bin",
             "nix": "onlyoffice-bin",
             "flatpak": "org.onlyoffice.desktopeditors",
@@ -48,6 +50,7 @@
         "description": "Δημοφιλής εφαρμογή διαχείρισης γνώσης βασισμένη στη γλώσσα Markdown",
         "category": "Office",
         "targets": {
+            "unios": "obsidian",
             "arch": "obsidian",
             "nix": "obsidian",
             "flatpak": "md.obsidian.Obsidian",
@@ -68,6 +71,7 @@
         "description": "Πρόγραμμα ανοιχτού κώδικα για τη διαχείριση γνώσης",
         "category": "Office",
         "targets": {
+            "unios": "logseq-desktop-bin",
             "arch": "logseq-desktop-bin",
             "nix": "logseq",
             "flatpak": "com.logseq.Logseq",
@@ -88,6 +92,7 @@
         "description": "Λήψη σημειώσεων ανοιχτού κώδικα με συγχρονισμό και κρυπτογράφηση",
         "category": "Office",
         "targets": {
+            "unios": "joplin-appimage",
             "arch": "joplin-appimage",
             "nix": "joplin-desktop",
             "flatpak": "net.cozic.joplin_desktop",
@@ -108,6 +113,7 @@
         "description": "Πρόγραμμα προβολής εγγράφων γενικής χρήσης από το KDE",
         "category": "Office",
         "targets": {
+            "unios": "okular",
             "ubuntu": "okular",
             "debian": "okular",
             "arch": "okular",
@@ -130,6 +136,7 @@
         "description": "Μινιμαλιστικό πρόγραμμα προβολής PDF/εγγράφων σε στυλ Vim",
         "category": "Office",
         "targets": {
+            "unios": "zathura",
             "ubuntu": "zathura",
             "debian": "zathura",
             "arch": "zathura",
@@ -149,6 +156,7 @@
         "description": "Ολοκληρωμένη λύση διαχείρισης βιβλιοθήκης ηλεκτρονικών βιβλίων",
         "category": "Office",
         "targets": {
+            "unios": "calibre",
             "ubuntu": "calibre",
             "debian": "calibre",
             "arch": "calibre",
@@ -172,6 +180,7 @@
         "description": "Εφαρμογή για χειρόγραφες σημειώσεις και σχολιασμό αρχείων PDF",
         "category": "Office",
         "targets": {
+            "unios": "xournalpp",
             "ubuntu": "xournalpp",
             "debian": "xournalpp",
             "arch": "xournalpp",
@@ -194,6 +203,7 @@
         "description": "Πρόγραμμα διαχείρισης βιβλιογραφικών αναφορών και εργαλείο αναφορών",
         "category": "Office",
         "targets": {
+            "unios": "zotero-bin",
             "arch": "zotero-bin",
             "opensuse": "zotero",
             "nix": "zotero",
@@ -215,6 +225,7 @@
         "description": "Εφαρμογή δημιουργίας σημειώσεων με ιεραρχική δομή και ισχυρές λειτουργίες",
         "category": "Office",
         "targets": {
+            "unios": "trilium-bin",
             "arch": "trilium-bin",
             "nix": "trilium-desktop",
             "flatpak": "com.github.zadam.trilium",

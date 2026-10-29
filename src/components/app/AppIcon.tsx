@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export function AppIcon({ url, name }: { url: string; name: string }) {
+export function AppIcon({ url, name }: {url: string; name: string }) {
     const [error, setError] = useState(false);
 
     if (error) {

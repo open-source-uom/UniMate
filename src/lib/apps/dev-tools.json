@@ -5,6 +5,7 @@
         "description": "Σύστημα διαχείρισης εκδόσεων με κατανεμημένη αρχιτεκτονική, σύμφωνα με τα πρότυπα του κλάδου",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "git",
             "ubuntu": "git",
             "debian": "git",
             "arch": "git",
@@ -27,6 +28,7 @@
         "description": "Επέκταση Git για τη διαχείριση εκδόσεων μεγάλων αρχείων",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "git-lfs",
             "ubuntu": "git-lfs",
             "debian": "git-lfs",
             "arch": "git-lfs",
@@ -49,6 +51,7 @@
         "description": "Απλό περιβάλλον εργασίας τερματικού για εντολές git",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "lazygit",
             "ubuntu": "lazygit",
             "debian": "lazygit",
             "arch": "lazygit",
@@ -70,6 +73,7 @@
         "description": "Η πιο δημοφιλής πλατφόρμα κοντέινερ για την ανάπτυξη εφαρμογών",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "docker",
             "ubuntu": "docker.io",
             "debian": "docker.io",
             "arch": "docker",
@@ -93,6 +97,7 @@
         "description": "Μηχανή κοντέινερ χωρίς ρίζα, εναλλακτική λύση του Docker",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "podman",
             "ubuntu": "podman",
             "debian": "podman",
             "arch": "podman",
@@ -115,6 +120,7 @@
         "description": "Ένα γραφικό περιβάλλον χρήστη για τη διαχείριση του Podman",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "podman-desktop",
             "arch": "podman-desktop",
             "nix": "podman-desktop",
             "flatpak": "io.podman_desktop.PodmanDesktop",
@@ -132,6 +138,7 @@
         "description": "Powerful system container and virtual machine manager (community fork of LXD)",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "incus",
             "ubuntu": "incus",
             "debian": "incus",
             "arch": "incus",
@@ -154,6 +161,7 @@
         "description": "Command-line tool for Kubernetes clusters",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "kubectl",
             "arch": "kubectl",
             "fedora": "kubernetes-client",
             "opensuse": "kubectl",
@@ -175,6 +183,7 @@
         "description": "Δημιουργία και διαχείριση φορητών περιβαλλόντων ανάπτυξης",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "vagrant",
             "debian": "vagrant",
             "arch": "vagrant",
             "fedora": "vagrant",
@@ -196,6 +205,7 @@
         "description": "Δωρεάν διαχειριστής εικονικών μηχανών για όλες τις πλατφόρμες",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "virtualbox",
             "ubuntu": "virtualbox",
             "arch": "virtualbox",
             "opensuse": "virtualbox",
@@ -216,6 +226,7 @@
         "description": "Απλή εφαρμογή εικονικής μηχανής για το GNOME",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "gnome-boxes",
             "ubuntu": "gnome-boxes",
             "debian": "gnome-boxes",
             "arch": "gnome-boxes",
@@ -238,6 +249,7 @@
         "description": "Εργαλείο διαχείρισης βάσεων δεδομένων γενικής χρήσης",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "dbeaver",
             "arch": "dbeaver",
             "nix": "dbeaver-bin",
             "flatpak": "io.dbeaver.DBeaverCommunity",
@@ -257,6 +269,7 @@
         "description": "Εργαλείο οπτικής σύγκρισης και ενοποίησης αρχείων",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "meld",
             "ubuntu": "meld",
             "debian": "meld",
             "arch": "meld",
@@ -278,6 +291,7 @@
         "description": "Αναλυτής πρωτοκόλλων δικτύου και καταγραφή πακέτων",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "wireshark-qt",
             "ubuntu": "wireshark",
             "debian": "wireshark",
             "arch": "wireshark-qt",
@@ -301,6 +315,7 @@
         "description": "Δημοφιλής πλατφόρμα δοκιμών και ανάπτυξης API",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "postman-bin",
             "arch": "postman-bin",
             "nix": "postman",
             "flatpak": "com.getpostman.Postman",
@@ -321,6 +336,7 @@
         "description": "Πρόγραμμα-πελάτης API ανοιχτού κώδικα με προτεραιότητα στη λειτουργία εκτός σύνδεσης",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "bruno-bin",
             "arch": "bruno-bin",
             "nix": "bruno",
             "flatpak": "com.usebruno.Bruno",
@@ -341,6 +357,7 @@
         "description": "Οικοσύστημα ανάπτυξης API ανοιχτού κώδικα",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "hoppscotch-bin",
             "arch": "hoppscotch-bin",
             "nix": "hoppscotch",
             "homebrew": "--cask hoppscotch"
@@ -359,6 +376,7 @@
         "description": "Σύγχρονος πελάτης API για επιτραπέζιους υπολογιστές για REST και GraphQL",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "yaak-bin",
             "arch": "yaak-bin",
             "nix": "yaak",
             "homebrew": "--cask yaak"
@@ -375,6 +393,7 @@
         "description": "Εφαρμογή για υπολογιστές γραφείου για τη διαχείριση εικονικών μηχανών KVM",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "virt-manager",
             "ubuntu": "virt-manager",
             "debian": "virt-manager",
             "arch": "virt-manager",
@@ -397,6 +416,7 @@
         "description": "Πλούσιος σε λειτουργίες επεξεργαστής δεκαεξαδικών για αντίστροφη μηχανική",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "imhex-bin",
             "arch": "imhex-bin",
             "fedora": "imhex",
             "nix": "imhex",
@@ -417,6 +437,7 @@
         "description": "Γεννήτρια συστήματος κατασκευής για πολλαπλές πλατφόρμες",
         "category": "Dev: Tools",
         "targets": {
+            "unios": "cmake",
             "ubuntu": "cmake",
             "debian": "cmake",
             "arch": "cmake",
