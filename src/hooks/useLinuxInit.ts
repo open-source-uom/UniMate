@@ -103,7 +103,9 @@ export function useLinuxInit(): UseLinuxInitReturn {
             const app = apps.find(a => a.id === appId);
             if (app) {
                 const pkg = app.targets['arch'] || app.targets['unios'];
-                if (pkg && isAurPackage(pkg)) {
+                //For downloading unios pkgs on unios, doesn't write an AUR command
+                const unios_pkg = (selectedDistro=='unios' && (app.category == 'UniOS Tools'))
+                if (pkg && isAurPackage(pkg) && !(unios_pkg)) {
                     aurPkgs.push(pkg);
                     aurAppNames.push(app.name);
                 }

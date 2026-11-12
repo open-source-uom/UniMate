@@ -6,7 +6,7 @@
   "category": "UniOS Tools",
   "targets": {
     "unios": "unibackpack",
-    "arch": "unibackpack"
+    "arch": "unibackpack-git"
         },              
   "icon": {
     "type": "url",                           
@@ -22,7 +22,7 @@
   "category": "UniOS Tools",
   "targets": {
     "unios": "unidesk",
-    "arch": "unidesk"
+    "arch": "unidesk-git"
     },              
   "icon": {                           
     "type": "url",
@@ -37,7 +37,7 @@
   "category": "UniOS Tools",
   "targets": {
     "unios": "uninews",
-    "arch":"uninews"
+    "arch":"uninews-git"
         },              
   "icon": {
     "type": "url",                           
@@ -53,7 +53,7 @@
   "category": "UniOS Tools",
   "targets": {
     "unios": "unios-update",
-    "arch": "unios-update"
+    "arch": "unios-update-git"
         },              
   "icon": {
     "type": "url",                           

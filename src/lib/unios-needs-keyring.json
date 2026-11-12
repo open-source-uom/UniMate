@@ -1,9 +1,5 @@
 {
     "packages": [
-        "unibackpack",
-        "unidesk",
-        "uninews",
-        "unios-update",
         "unios-desktop-settings",
         "unios-keyring"
     ]
